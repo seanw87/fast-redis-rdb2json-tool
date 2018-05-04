@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="qiuqiu_dmp_rdb2json" targetName="qiuqiu_dmp_rdb2json" />
+      <config projectName="qiuqiu_dmp_rdb2json" targetName="rdb2json" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f027095-dc38-4b99-8fdd-b4471c917ece" name="Default" comment="virgin commit">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/C.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/CXX.includecache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/DependInfo.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/build.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/cmake_clean.cmake" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/depend.internal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/depend.make" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/progress.make" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_C.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_CXX.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adlist.o" afterPath="$PROJECT_DIR$/src/adlist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ae.o" afterPath="$PROJECT_DIR$/src/ae.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anet.o" afterPath="$PROJECT_DIR$/src/anet.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aof.o" afterPath="$PROJECT_DIR$/src/aof.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bio.o" afterPath="$PROJECT_DIR$/src/bio.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bitops.o" afterPath="$PROJECT_DIR$/src/bitops.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocked.o" afterPath="$PROJECT_DIR$/src/blocked.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cJSON.o" afterPath="$PROJECT_DIR$/src/cJSON.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/childinfo.o" afterPath="$PROJECT_DIR$/src/childinfo.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cluster.o" afterPath="$PROJECT_DIR$/src/cluster.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.o" afterPath="$PROJECT_DIR$/src/config.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crc16.o" afterPath="$PROJECT_DIR$/src/crc16.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crc64.o" afterPath="$PROJECT_DIR$/src/crc64.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.o" afterPath="$PROJECT_DIR$/src/db.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/debug.o" afterPath="$PROJECT_DIR$/src/debug.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/defrag.o" afterPath="$PROJECT_DIR$/src/defrag.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dict.o" afterPath="$PROJECT_DIR$/src/dict.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/endianconv.o" afterPath="$PROJECT_DIR$/src/endianconv.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/evict.o" afterPath="$PROJECT_DIR$/src/evict.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/expire.o" afterPath="$PROJECT_DIR$/src/expire.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geo.o" afterPath="$PROJECT_DIR$/src/geo.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geohash.o" afterPath="$PROJECT_DIR$/src/geohash.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geohash_helper.o" afterPath="$PROJECT_DIR$/src/geohash_helper.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hyperloglog.o" afterPath="$PROJECT_DIR$/src/hyperloglog.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/intset.o" afterPath="$PROJECT_DIR$/src/intset.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/latency.o" afterPath="$PROJECT_DIR$/src/latency.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lazyfree.o" afterPath="$PROJECT_DIR$/src/lazyfree.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lzf_c.o" afterPath="$PROJECT_DIR$/src/lzf_c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lzf_d.o" afterPath="$PROJECT_DIR$/src/lzf_d.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.o" afterPath="$PROJECT_DIR$/src/main.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/memtest.o" afterPath="$PROJECT_DIR$/src/memtest.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/module.o" afterPath="$PROJECT_DIR$/src/module.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/multi.o" afterPath="$PROJECT_DIR$/src/multi.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/networking.o" afterPath="$PROJECT_DIR$/src/networking.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/notify.o" afterPath="$PROJECT_DIR$/src/notify.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/object.o" afterPath="$PROJECT_DIR$/src/object.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pqsort.o" afterPath="$PROJECT_DIR$/src/pqsort.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pubsub.o" afterPath="$PROJECT_DIR$/src/pubsub.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quicklist.o" afterPath="$PROJECT_DIR$/src/quicklist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rand.o" afterPath="$PROJECT_DIR$/src/rand.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rax.o" afterPath="$PROJECT_DIR$/src/rax.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.o" afterPath="$PROJECT_DIR$/src/rdb.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb2json" afterPath="$PROJECT_DIR$/src/rdb2json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redis-check-rdb.o" afterPath="$PROJECT_DIR$/src/redis-check-rdb.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/release.o" afterPath="$PROJECT_DIR$/src/release.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/replication.o" afterPath="$PROJECT_DIR$/src/replication.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rio.o" afterPath="$PROJECT_DIR$/src/rio.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripting.o" afterPath="$PROJECT_DIR$/src/scripting.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sds.o" afterPath="$PROJECT_DIR$/src/sds.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sentinel.o" afterPath="$PROJECT_DIR$/src/sentinel.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setproctitle.o" afterPath="$PROJECT_DIR$/src/setproctitle.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sha1.o" afterPath="$PROJECT_DIR$/src/sha1.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/siphash.o" afterPath="$PROJECT_DIR$/src/siphash.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/slowlog.o" afterPath="$PROJECT_DIR$/src/slowlog.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort.o" afterPath="$PROJECT_DIR$/src/sort.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sparkline.o" afterPath="$PROJECT_DIR$/src/sparkline.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/syncio.o" afterPath="$PROJECT_DIR$/src/syncio.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_hash.o" afterPath="$PROJECT_DIR$/src/t_hash.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_list.o" afterPath="$PROJECT_DIR$/src/t_list.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_set.o" afterPath="$PROJECT_DIR$/src/t_set.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_string.o" afterPath="$PROJECT_DIR$/src/t_string.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_zset.o" afterPath="$PROJECT_DIR$/src/t_zset.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.o" afterPath="$PROJECT_DIR$/src/util.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ziplist.o" afterPath="$PROJECT_DIR$/src/ziplist.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zipmap.o" afterPath="$PROJECT_DIR$/src/zipmap.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zmalloc.o" afterPath="$PROJECT_DIR$/src/zmalloc.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCCompiler.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCXXCompiler.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeSystem.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeSystem.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/link.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/qiuqiu_dmp_rdb2json.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/qiuqiu_dmp_rdb2json.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.c" afterPath="$PROJECT_DIR$/src/rdb.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/release.h" afterPath="$PROJECT_DIR$/src/release.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.c" afterPath="$PROJECT_DIR$/src/util.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.h" afterPath="$PROJECT_DIR$/src/util.h" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="qiuqiu-dmp-rdb2json" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="rdb.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rdb.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="4995" column="0" lean-forward="true" selection-start-line="4995" selection-start-column="0" selection-end-line="4995" selection-end-column="0" />
+              <folding>
+                <element signature="e#1611#1630#0" expanded="true" />
+                <element signature="e#16282#16912#0" expanded="false" />
+                <element signature="e#16914#17386#0" expanded="false" />
+                <element signature="e#17388#19356#0" expanded="false" />
+                <element signature="e#19358#20740#0" expanded="false" />
+                <element signature="e#20742#22104#0" expanded="false" />
+                <element signature="e#22314#23904#0" expanded="false" />
+                <element signature="e#22921#23727#0" expanded="true" />
+                <element signature="e#23906#24402#0" expanded="false" />
+                <element signature="e#24404#24813#0" expanded="false" />
+                <element signature="e#24815#25093#0" expanded="false" />
+                <element signature="e#25095#25277#0" expanded="false" />
+                <element signature="e#25279#25484#0" expanded="false" />
+                <element signature="e#25486#26905#0" expanded="false" />
+                <element signature="e#26907#27193#0" expanded="false" />
+                <element signature="e#27195#32710#0" expanded="false" />
+                <element signature="e#32712#33090#0" expanded="false" />
+                <element signature="e#33092#33925#0" expanded="false" />
+                <element signature="e#33927#34227#0" expanded="false" />
+                <element signature="e#34229#34450#0" expanded="false" />
+                <element signature="e#34452#34721#0" expanded="false" />
+                <element signature="e#34723#35884#0" expanded="false" />
+                <element signature="e#35886#39341#0" expanded="false" />
+                <element signature="e#39343#40380#0" expanded="false" />
+                <element signature="e#40382#42173#0" expanded="false" />
+                <element signature="e#42175#44009#0" expanded="false" />
+                <element signature="e#44011#44167#0" expanded="false" />
+                <element signature="e#44169#55296#0" expanded="false" />
+                <element signature="e#55298#55733#0" expanded="false" />
+                <element signature="e#55735#55963#0" expanded="false" />
+                <element signature="e#55965#56038#0" expanded="false" />
+                <element signature="e#56040#56971#0" expanded="false" />
+                <element signature="e#56973#63955#0" expanded="false" />
+                <element signature="e#63957#64650#0" expanded="false" />
+                <element signature="e#64652#66220#0" expanded="false" />
+                <element signature="e#66222#69929#0" expanded="false" />
+                <element signature="e#69931#70401#0" expanded="false" />
+                <element signature="e#70403#76728#0" expanded="false" />
+                <element signature="e#76730#77020#0" expanded="false" />
+                <element signature="e#77022#78171#0" expanded="false" />
+                <element signature="e#78196#90242#0" expanded="false" />
+                <element signature="e#90244#102209#0" expanded="false" />
+                <element signature="e#102211#114294#0" expanded="false" />
+                <element signature="e#114296#126976#0" expanded="false" />
+                <element signature="e#126978#139544#0" expanded="false" />
+                <element signature="e#139546#152158#0" expanded="false" />
+                <element signature="e#152160#164315#0" expanded="false" />
+                <element signature="e#164317#176451#0" expanded="false" />
+                <element signature="e#176453#188477#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stdio.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/stdio.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6545">
+              <caret line="385" column="11" lean-forward="false" selection-start-line="385" selection-start-column="11" selection-end-line="385" selection-end-column="11" />
+              <folding>
+                <element signature="e#8054#8427#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11866">
+              <caret line="698" column="20" lean-forward="false" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="20" />
+              <folding>
+                <element signature="e#22975#26601#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/util.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rdb.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rdb.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2431">
+              <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>myRdbGenericLoadStringObject</find>
+      <find>rdbGenericLoadStringObject</find>
+      <find>OBJ_ENCODING_SKIPLIST</find>
+      <find>output_file</find>
+      <find>ziplistGetObject</find>
+      <find>zsetConvert</find>
+      <find>RDB_TYPE_ZSET_ZIPLIST</find>
+      <find>root</find>
+      <find>return</find>
+      <find>zsetConvertShopAddobjects</find>
+      <find>zset_max_ziplist_entries</find>
+      <find>zset_max_ziplist_value</find>
+      <find>RDB_TYPE_ZSET_2</find>
+      <find>score</find>
+      <find>else if (rdbtype == RDB_TYPE_ZSET_2 || rdbtype == RDB_TYPE_ZSET) {</find>
+      <find>compKeyNoble</find>
+      <find>serverLog</find>
+      <find>compKeySnsLen</find>
+      <find>cpCompKeySns</find>
+      <find>cJSON</find>
+      <find>compKeyShopActiveobjectsLen</find>
+      <find>compKeyShopActiveobjects</find>
+      <find>add</find>
+      <find>compKeyVip2</find>
+      <find>compKeyOnline</find>
+      <find>cpCompKeyVip</find>
+      <find>rdbtype</find>
+      <find>keyLen</find>
+      <find>keyNo</find>
+      <find>keyNoInt</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>mybuf</replace>
+      <replace>{} //goto</replace>
+      <replace>compKeyAcc</replace>
+      <replace>compKeyAccLen</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="allen" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/dict.c" />
+        <option value="$PROJECT_DIR$/src/server.c" />
+        <option value="$PROJECT_DIR$/src/main.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/db.c" />
+        <option value="$PROJECT_DIR$/src/object.c" />
+        <option value="$PROJECT_DIR$/src/rdb.h" />
+        <option value="$PROJECT_DIR$/src/t_hash.c" />
+        <option value="$PROJECT_DIR$/src/server.h" />
+        <option value="$PROJECT_DIR$/src/t_zset.c" />
+        <option value="$PROJECT_DIR$/src/util.c" />
+        <option value="$PROJECT_DIR$/src/util.h" />
+        <option value="$PROJECT_DIR$/src/rdb.c" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1857" />
+    <option name="height" value="985" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiuqiu_dmp_rdb2json" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiuqiu-dmp-rdb2json-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiuqiu_dmp_rdb2json" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qiuqiu-dmp-rdb2json-test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="/mnt/winShare/rdb.c" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="settings.editor.splitter.proportion" value="0.27376425" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.rdb2json">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CLion_Remote" factoryName="GDB Remote Debug" remoteCommand="" symbolFile="" sysroot="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeWebKit" factoryName="NW.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="qiuqiu-dmp-rdb2json" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <platform value="ANDROID" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="qiuqiu-dmp-rdb2json" />
+      <method />
+    </configuration>
+    <configuration default="true" type="XSLT" factoryName="XSLT">
+      <option name="myOutputFile" />
+      <option name="myOpenOutputFile" value="false" />
+      <option name="myOpenInBrowser" value="false" />
+      <option name="mySmartErrorHandling" value="true" />
+      <option name="myRunnerPort" value="34873" />
+      <option name="myVmArguments" />
+      <option name="myWorkingDirectory" />
+      <option name="myModule" />
+      <option name="myJdk" />
+      <parameters />
+      <OutputType value="CONSOLE" save-to-file="false" />
+      <FileType name="XML" />
+      <JdkChoice value="FROM_MODULE" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="qiuqiu-dmp-rdb2json" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="qiuqiu-dmp-rdb2json" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="qiuqiu-dmp-rdb2json" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="qiuqiu-dmp-rdb2json" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/src/rdb2json" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="rdb2json" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS=" -f /mnt/vb_share/rdb_6108.rdb -o /tmp/acc2_rdb_test.json" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_PATH="$PROJECT_DIR$/src/rdb2json" EXPLICIT_BUILD_TARGET_NAME="all">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="qiuqiu_dmp_rdb2json" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="qiuqiu_dmp_rdb2json" TARGET_NAME="qiuqiu_dmp_rdb2json" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="qiuqiu_dmp_rdb2json" RUN_TARGET_NAME="qiuqiu_dmp_rdb2json">
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
+      <item index="1" class="java.lang.String" itemvalue="Application.rdb2json" />
+      <item index="2" class="java.lang.String" itemvalue="Application.qiuqiu_dmp_rdb2json" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f027095-dc38-4b99-8fdd-b4471c917ece" name="Default" comment="" />
+      <created>1494763731110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1494763731110</updated>
+      <workItem from="1494763733195" duration="902000" />
+      <workItem from="1494931662526" duration="2057000" />
+      <workItem from="1495014096033" duration="15066000" />
+      <workItem from="1495177159862" duration="2165000" />
+      <workItem from="1495271626589" duration="5279000" />
+      <workItem from="1495374189451" duration="12230000" />
+      <workItem from="1495420517628" duration="1981000" />
+      <workItem from="1501727602393" duration="12601000" />
+      <workItem from="1508298513563" duration="1230000" />
+      <workItem from="1508317525482" duration="63000" />
+      <workItem from="1508318177825" duration="10184000" />
+      <workItem from="1510281391645" duration="3622000" />
+      <workItem from="1511175703112" duration="673000" />
+      <workItem from="1511233461157" duration="17665000" />
+      <workItem from="1511323948051" duration="15106000" />
+      <workItem from="1515589605293" duration="4082000" />
+      <workItem from="1515988475145" duration="8243000" />
+      <workItem from="1516009785834" duration="1750000" />
+      <workItem from="1516011615391" duration="6583000" />
+      <workItem from="1517555674910" duration="4736000" />
+      <workItem from="1519810411136" duration="3164000" />
+      <workItem from="1522243855731" duration="52000" />
+      <workItem from="1522292897280" duration="9313000" />
+      <workItem from="1522739309482" duration="2816000" />
+      <workItem from="1523333964074" duration="1864000" />
+      <workItem from="1523415636467" duration="1354000" />
+      <workItem from="1524133826128" duration="2799000" />
+      <workItem from="1524452001785" duration="461000" />
+      <workItem from="1525234631488" duration="4706000" />
+      <workItem from="1525331464482" duration="973000" />
+      <workItem from="1525332816410" duration="5831000" />
+      <workItem from="1525342139357" duration="1050000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="171716000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="64" y="-11" width="1857" height="985" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18739635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20969696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18358208" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32388058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="virgin commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="virgin commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="7" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sds.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2826">
+          <caret line="157" column="5" lean-forward="false" selection-start-line="157" selection-start-column="5" selection-end-line="157" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdsalloc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rdb.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41094">
+          <caret line="2283" column="0" lean-forward="true" selection-start-line="2283" selection-start-column="0" selection-end-line="2283" selection-end-column="0" />
+          <folding>
+            <element signature="e#1611#1630#0" expanded="true" />
+            <element signature="e#16282#16912#0" expanded="false" />
+            <element signature="e#16914#17386#0" expanded="false" />
+            <element signature="e#17388#19356#0" expanded="false" />
+            <element signature="e#19358#20740#0" expanded="false" />
+            <element signature="e#20742#22104#0" expanded="false" />
+            <element signature="e#22314#23904#0" expanded="false" />
+            <element signature="e#22921#23727#0" expanded="true" />
+            <element signature="e#23906#24402#0" expanded="false" />
+            <element signature="e#24404#24813#0" expanded="false" />
+            <element signature="e#24815#25093#0" expanded="false" />
+            <element signature="e#25095#25277#0" expanded="false" />
+            <element signature="e#25279#25484#0" expanded="false" />
+            <element signature="e#25486#26905#0" expanded="false" />
+            <element signature="e#26907#27193#0" expanded="false" />
+            <element signature="e#27195#32710#0" expanded="false" />
+            <element signature="e#32712#33090#0" expanded="false" />
+            <element signature="e#33092#33925#0" expanded="false" />
+            <element signature="e#33927#34227#0" expanded="false" />
+            <element signature="e#34229#34450#0" expanded="false" />
+            <element signature="e#34452#34721#0" expanded="false" />
+            <element signature="e#34723#35884#0" expanded="false" />
+            <element signature="e#35886#39341#0" expanded="false" />
+            <element signature="e#39343#40380#0" expanded="false" />
+            <element signature="e#40382#42173#0" expanded="false" />
+            <element signature="e#42175#44009#0" expanded="false" />
+            <element signature="e#44011#44167#0" expanded="false" />
+            <element signature="e#44169#55296#0" expanded="false" />
+            <element signature="e#55298#55733#0" expanded="false" />
+            <element signature="e#55735#55963#0" expanded="false" />
+            <element signature="e#55965#56038#0" expanded="false" />
+            <element signature="e#56040#56971#0" expanded="false" />
+            <element signature="e#56973#63955#0" expanded="false" />
+            <element signature="e#63957#64650#0" expanded="false" />
+            <element signature="e#64652#66220#0" expanded="false" />
+            <element signature="e#66222#69929#0" expanded="false" />
+            <element signature="e#69931#70401#0" expanded="false" />
+            <element signature="e#70403#76728#0" expanded="false" />
+            <element signature="e#76730#77020#0" expanded="false" />
+            <element signature="e#77022#78171#0" expanded="false" />
+            <element signature="e#78196#90242#0" expanded="false" />
+            <element signature="e#90244#102209#0" expanded="false" />
+            <element signature="e#102211#114294#0" expanded="false" />
+            <element signature="e#114296#126976#0" expanded="false" />
+            <element signature="e#126978#139544#0" expanded="false" />
+            <element signature="e#139546#152158#0" expanded="false" />
+            <element signature="e#152160#164315#0" expanded="false" />
+            <element signature="e#164317#176451#0" expanded="false" />
+            <element signature="e#176453#188477#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70254">
+          <caret line="3903" column="30" lean-forward="false" selection-start-line="3903" selection-start-column="30" selection-end-line="3903" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2880">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="166" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dict.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4752">
+          <caret line="264" column="11" lean-forward="false" selection-start-line="264" selection-start-column="4" selection-end-line="264" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dict.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2286">
+          <caret line="127" column="27" lean-forward="false" selection-start-line="127" selection-start-column="22" selection-end-line="127" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rdb.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43974">
+          <caret line="2443" column="0" lean-forward="true" selection-start-line="2443" selection-start-column="0" selection-end-line="2443" selection-end-column="0" />
+          <folding>
+            <element signature="e#1611#1630#0" expanded="true" />
+            <element signature="e#16282#16912#0" expanded="false" />
+            <element signature="e#16914#17386#0" expanded="false" />
+            <element signature="e#17388#19356#0" expanded="false" />
+            <element signature="e#19358#20740#0" expanded="false" />
+            <element signature="e#20742#22104#0" expanded="false" />
+            <element signature="e#22314#23904#0" expanded="false" />
+            <element signature="e#22921#23727#0" expanded="true" />
+            <element signature="e#23906#24402#0" expanded="false" />
+            <element signature="e#24404#24813#0" expanded="false" />
+            <element signature="e#24815#25093#0" expanded="false" />
+            <element signature="e#25095#25277#0" expanded="false" />
+            <element signature="e#25279#25484#0" expanded="false" />
+            <element signature="e#25486#26905#0" expanded="false" />
+            <element signature="e#26907#27193#0" expanded="false" />
+            <element signature="e#27195#32710#0" expanded="false" />
+            <element signature="e#32712#33090#0" expanded="false" />
+            <element signature="e#33092#33925#0" expanded="false" />
+            <element signature="e#33927#34227#0" expanded="false" />
+            <element signature="e#34229#34450#0" expanded="false" />
+            <element signature="e#34452#34721#0" expanded="false" />
+            <element signature="e#34723#35884#0" expanded="false" />
+            <element signature="e#35886#39341#0" expanded="false" />
+            <element signature="e#39343#40380#0" expanded="false" />
+            <element signature="e#40382#42173#0" expanded="false" />
+            <element signature="e#42175#44009#0" expanded="false" />
+            <element signature="e#44011#44167#0" expanded="false" />
+            <element signature="e#44169#55296#0" expanded="false" />
+            <element signature="e#55298#55733#0" expanded="false" />
+            <element signature="e#55735#55963#0" expanded="false" />
+            <element signature="e#55965#56038#0" expanded="false" />
+            <element signature="e#56040#56971#0" expanded="false" />
+            <element signature="e#56973#63955#0" expanded="false" />
+            <element signature="e#63957#64650#0" expanded="false" />
+            <element signature="e#64652#66220#0" expanded="false" />
+            <element signature="e#66222#69929#0" expanded="false" />
+            <element signature="e#69931#70401#0" expanded="false" />
+            <element signature="e#70403#76728#0" expanded="false" />
+            <element signature="e#76730#77020#0" expanded="false" />
+            <element signature="e#77022#78171#0" expanded="false" />
+            <element signature="e#78196#90242#0" expanded="false" />
+            <element signature="e#90244#102209#0" expanded="false" />
+            <element signature="e#102211#114294#0" expanded="false" />
+            <element signature="e#114296#126976#0" expanded="false" />
+            <element signature="e#126978#139544#0" expanded="false" />
+            <element signature="e#139546#152158#0" expanded="false" />
+            <element signature="e#152160#164315#0" expanded="false" />
+            <element signature="e#164317#176451#0" expanded="false" />
+            <element signature="e#176453#188477#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/replication.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="1013" column="5" lean-forward="false" selection-start-line="1013" selection-start-column="5" selection-end-line="1013" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/t_list.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="695" column="5" lean-forward="false" selection-start-line="695" selection-start-column="5" selection-end-line="695" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ae_epoll.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ae.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sdsalloc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="41" column="8" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="469" column="16" lean-forward="false" selection-start-line="469" selection-start-column="4" selection-end-line="469" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/hiredis/sds.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="80" column="4" lean-forward="false" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ziplist.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dict.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="159" column="5" lean-forward="false" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/hiredis/hiredis.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deps/jemalloc/src/arena.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="12" lean-forward="true" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zmalloc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="199" column="0" lean-forward="false" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bio.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="174" column="44" lean-forward="true" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sds.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="219" column="4" lean-forward="false" selection-start-line="219" selection-start-column="4" selection-end-line="219" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/endianconv.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="70" column="8" lean-forward="false" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quicklist.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="154" column="5" lean-forward="false" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/t_set.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19224">
+          <caret line="1068" column="17" lean-forward="false" selection-start-line="1068" selection-start-column="17" selection-end-line="1068" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="105" column="21" lean-forward="false" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rio.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redis-check-rdb.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="131" column="41" lean-forward="true" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="3802" column="17" lean-forward="false" selection-start-line="3802" selection-start-column="17" selection-end-line="3802" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sds.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="495" column="4" lean-forward="false" selection-start-line="495" selection-start-column="4" selection-end-line="495" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="2021" column="111" lean-forward="false" selection-start-line="2021" selection-start-column="111" selection-end-line="2021" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/object.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/t_hash.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="534" column="45" lean-forward="false" selection-start-line="534" selection-start-column="45" selection-end-line="534" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="152" column="13" lean-forward="false" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zipmap.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="314" column="64" lean-forward="false" selection-start-line="314" selection-start-column="61" selection-end-line="314" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cJSON.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="1789" column="19" lean-forward="false" selection-start-line="1789" selection-start-column="19" selection-end-line="1789" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cJSON.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="242" column="8" lean-forward="false" selection-start-line="242" selection-start-column="8" selection-end-line="242" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dict.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="264" column="4" lean-forward="false" selection-start-line="264" selection-start-column="4" selection-end-line="264" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13320">
+          <caret line="740" column="17" lean-forward="false" selection-start-line="740" selection-start-column="17" selection-end-line="740" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/t_zset.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23688">
+          <caret line="1316" column="23" lean-forward="false" selection-start-line="1316" selection-start-column="23" selection-end-line="1316" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///mnt/winShare/rdb.c" />
+    <entry file="file://$PROJECT_DIR$/src/rdb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/string.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="346" column="13" lean-forward="false" selection-start-line="346" selection-start-column="13" selection-end-line="346" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6545">
+          <caret line="385" column="11" lean-forward="false" selection-start-line="385" selection-start-column="11" selection-end-line="385" selection-end-column="11" />
+          <folding>
+            <element signature="e#8054#8427#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11356">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11866">
+          <caret line="698" column="20" lean-forward="false" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="20" />
+          <folding>
+            <element signature="e#22975#26601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rdb.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="4995" column="0" lean-forward="true" selection-start-line="4995" selection-start-column="0" selection-end-line="4995" selection-end-column="0" />
+          <folding>
+            <element signature="e#1611#1630#0" expanded="true" />
+            <element signature="e#16282#16912#0" expanded="false" />
+            <element signature="e#16914#17386#0" expanded="false" />
+            <element signature="e#17388#19356#0" expanded="false" />
+            <element signature="e#19358#20740#0" expanded="false" />
+            <element signature="e#20742#22104#0" expanded="false" />
+            <element signature="e#22314#23904#0" expanded="false" />
+            <element signature="e#22921#23727#0" expanded="true" />
+            <element signature="e#23906#24402#0" expanded="false" />
+            <element signature="e#24404#24813#0" expanded="false" />
+            <element signature="e#24815#25093#0" expanded="false" />
+            <element signature="e#25095#25277#0" expanded="false" />
+            <element signature="e#25279#25484#0" expanded="false" />
+            <element signature="e#25486#26905#0" expanded="false" />
+            <element signature="e#26907#27193#0" expanded="false" />
+            <element signature="e#27195#32710#0" expanded="false" />
+            <element signature="e#32712#33090#0" expanded="false" />
+            <element signature="e#33092#33925#0" expanded="false" />
+            <element signature="e#33927#34227#0" expanded="false" />
+            <element signature="e#34229#34450#0" expanded="false" />
+            <element signature="e#34452#34721#0" expanded="false" />
+            <element signature="e#34723#35884#0" expanded="false" />
+            <element signature="e#35886#39341#0" expanded="false" />
+            <element signature="e#39343#40380#0" expanded="false" />
+            <element signature="e#40382#42173#0" expanded="false" />
+            <element signature="e#42175#44009#0" expanded="false" />
+            <element signature="e#44011#44167#0" expanded="false" />
+            <element signature="e#44169#55296#0" expanded="false" />
+            <element signature="e#55298#55733#0" expanded="false" />
+            <element signature="e#55735#55963#0" expanded="false" />
+            <element signature="e#55965#56038#0" expanded="false" />
+            <element signature="e#56040#56971#0" expanded="false" />
+            <element signature="e#56973#63955#0" expanded="false" />
+            <element signature="e#63957#64650#0" expanded="false" />
+            <element signature="e#64652#66220#0" expanded="false" />
+            <element signature="e#66222#69929#0" expanded="false" />
+            <element signature="e#69931#70401#0" expanded="false" />
+            <element signature="e#70403#76728#0" expanded="false" />
+            <element signature="e#76730#77020#0" expanded="false" />
+            <element signature="e#77022#78171#0" expanded="false" />
+            <element signature="e#78196#90242#0" expanded="false" />
+            <element signature="e#90244#102209#0" expanded="false" />
+            <element signature="e#102211#114294#0" expanded="false" />
+            <element signature="e#114296#126976#0" expanded="false" />
+            <element signature="e#126978#139544#0" expanded="false" />
+            <element signature="e#139546#152158#0" expanded="false" />
+            <element signature="e#152160#164315#0" expanded="false" />
+            <element signature="e#164317#176451#0" expanded="false" />
+            <element signature="e#176453#188477#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

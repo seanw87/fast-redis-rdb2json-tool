@@ -1,0 +1,3 @@
+#define REDIS_GIT_SHA1 "3223ec49"
+#define REDIS_GIT_DIRTY "25056"
+#define REDIS_BUILD_ID "wxf-VirtualBox-1525342593"
