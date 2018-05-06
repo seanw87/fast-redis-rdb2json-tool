@@ -1,9 +1,9 @@
 # fast-rdb2json-tool
 
-##parse redis rdb file as fast as you can imagine
+##parse redis rdb file as fast as you can imagine##
 
 This rdb file parsing tool is based on redis 4.0.2 source. Simply add cJSON module and push everything into json output.
-###It's much faster than most of the tools based on python or lua plugin!
+###It's much faster than most of the tools based on python or lua plugin!###
 
 Usage:
 ```
@@ -11,5 +11,8 @@ Usage:
 ```
 
 applied redis key pattern: key1:key2:key3:...
-and the json output will be {"k1e2y1":"key1","k1e2y2":"key2","k1e2y3":"key3",...,"name1":"val1",...}, in which "name1" is the field name 
--- for example: act:111:222.  In which 111 is the act id and 222 is the uid
+the json output will be {"k1e2y1":"key1","k1e2y2":"key2","k1e2y3":"key3",...,"name1":"val1",...}, in which "name1" is the field name 
+
+take a key for example: act:111:222.  In which 111 is the act id and 222 is the uid
+
+take a shot at src/rdb.c and make it what you want!
