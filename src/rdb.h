@@ -141,7 +141,5 @@ int rdbLoadRio(rio *rdb, rdbSaveInfo *rsi);
 /*rdb2json fix*/
 int myRdbLoad(char *rdbfile, char *destfile, rdbSaveInfo *rsi);
 int myRdbLoadRio(rio *rdb, FILE *dest, rdbSaveInfo *rsi);
-robj *myRdbLoadObjectAcc(int type, rio *rdb, char *id, FILE *dest);
-robj *myRdbLoadObjectOrder(int type, rio *rdb, FILE *dest);
 
 #endif

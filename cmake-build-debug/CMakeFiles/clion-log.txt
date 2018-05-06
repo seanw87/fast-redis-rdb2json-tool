@@ -1,4 +1,4 @@
-/usr/local/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/wxf/qiuqiu-dmp-rdb2json-test
+/usr/local/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/winShare/fast-rdb2json-tool
 -- The C compiler identification is GNU 5.2.1
 -- The CXX compiler identification is GNU 5.2.1
 -- Check for working C compiler: /usr/bin/cc
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/wxf/qiuqiu-dmp-rdb2json-test/cmake-build-debug
+-- Build files have been written to: /mnt/winShare/fast-rdb2json-tool/cmake-build-debug

@@ -13,111 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f027095-dc38-4b99-8fdd-b4471c917ece" name="Default" comment="virgin commit">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/C.includecache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/CXX.includecache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.internal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/depend.internal" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rdb2json.dir/progress.make" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_C.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeDetermineCompilerABI_CXX.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/adlist.o" afterPath="$PROJECT_DIR$/src/adlist.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ae.o" afterPath="$PROJECT_DIR$/src/ae.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/anet.o" afterPath="$PROJECT_DIR$/src/anet.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/aof.o" afterPath="$PROJECT_DIR$/src/aof.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bio.o" afterPath="$PROJECT_DIR$/src/bio.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/bitops.o" afterPath="$PROJECT_DIR$/src/bitops.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/blocked.o" afterPath="$PROJECT_DIR$/src/blocked.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cJSON.o" afterPath="$PROJECT_DIR$/src/cJSON.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/childinfo.o" afterPath="$PROJECT_DIR$/src/childinfo.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cluster.o" afterPath="$PROJECT_DIR$/src/cluster.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config.o" afterPath="$PROJECT_DIR$/src/config.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crc16.o" afterPath="$PROJECT_DIR$/src/crc16.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/crc64.o" afterPath="$PROJECT_DIR$/src/crc64.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.o" afterPath="$PROJECT_DIR$/src/db.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/debug.o" afterPath="$PROJECT_DIR$/src/debug.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/defrag.o" afterPath="$PROJECT_DIR$/src/defrag.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dict.o" afterPath="$PROJECT_DIR$/src/dict.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/endianconv.o" afterPath="$PROJECT_DIR$/src/endianconv.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/evict.o" afterPath="$PROJECT_DIR$/src/evict.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/expire.o" afterPath="$PROJECT_DIR$/src/expire.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geo.o" afterPath="$PROJECT_DIR$/src/geo.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geohash.o" afterPath="$PROJECT_DIR$/src/geohash.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/geohash_helper.o" afterPath="$PROJECT_DIR$/src/geohash_helper.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hyperloglog.o" afterPath="$PROJECT_DIR$/src/hyperloglog.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/intset.o" afterPath="$PROJECT_DIR$/src/intset.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/latency.o" afterPath="$PROJECT_DIR$/src/latency.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lazyfree.o" afterPath="$PROJECT_DIR$/src/lazyfree.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lzf_c.o" afterPath="$PROJECT_DIR$/src/lzf_c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lzf_d.o" afterPath="$PROJECT_DIR$/src/lzf_d.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.o" afterPath="$PROJECT_DIR$/src/main.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/memtest.o" afterPath="$PROJECT_DIR$/src/memtest.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/module.o" afterPath="$PROJECT_DIR$/src/module.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/multi.o" afterPath="$PROJECT_DIR$/src/multi.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/networking.o" afterPath="$PROJECT_DIR$/src/networking.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/notify.o" afterPath="$PROJECT_DIR$/src/notify.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/object.o" afterPath="$PROJECT_DIR$/src/object.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pqsort.o" afterPath="$PROJECT_DIR$/src/pqsort.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pubsub.o" afterPath="$PROJECT_DIR$/src/pubsub.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quicklist.o" afterPath="$PROJECT_DIR$/src/quicklist.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rand.o" afterPath="$PROJECT_DIR$/src/rand.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rax.o" afterPath="$PROJECT_DIR$/src/rax.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.o" afterPath="$PROJECT_DIR$/src/rdb.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb2json" afterPath="$PROJECT_DIR$/src/rdb2json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/redis-check-rdb.o" afterPath="$PROJECT_DIR$/src/redis-check-rdb.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/release.o" afterPath="$PROJECT_DIR$/src/release.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/replication.o" afterPath="$PROJECT_DIR$/src/replication.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rio.o" afterPath="$PROJECT_DIR$/src/rio.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scripting.o" afterPath="$PROJECT_DIR$/src/scripting.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sds.o" afterPath="$PROJECT_DIR$/src/sds.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sentinel.o" afterPath="$PROJECT_DIR$/src/sentinel.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/setproctitle.o" afterPath="$PROJECT_DIR$/src/setproctitle.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sha1.o" afterPath="$PROJECT_DIR$/src/sha1.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/siphash.o" afterPath="$PROJECT_DIR$/src/siphash.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/slowlog.o" afterPath="$PROJECT_DIR$/src/slowlog.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sort.o" afterPath="$PROJECT_DIR$/src/sort.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sparkline.o" afterPath="$PROJECT_DIR$/src/sparkline.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/syncio.o" afterPath="$PROJECT_DIR$/src/syncio.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_hash.o" afterPath="$PROJECT_DIR$/src/t_hash.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_list.o" afterPath="$PROJECT_DIR$/src/t_list.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_set.o" afterPath="$PROJECT_DIR$/src/t_set.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_string.o" afterPath="$PROJECT_DIR$/src/t_string.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_zset.o" afterPath="$PROJECT_DIR$/src/t_zset.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.o" afterPath="$PROJECT_DIR$/src/util.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ziplist.o" afterPath="$PROJECT_DIR$/src/ziplist.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zipmap.o" afterPath="$PROJECT_DIR$/src/zipmap.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zmalloc.o" afterPath="$PROJECT_DIR$/src/zmalloc.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCCompiler.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeCXXCompiler.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeSystem.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.7.1/CMakeSystem.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/DependInfo.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/flags.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/progress.make" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/qiuqiu_dmp_rdb2json.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/qiuqiu_dmp_rdb2json.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.c" afterPath="$PROJECT_DIR$/src/rdb.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/release.h" afterPath="$PROJECT_DIR$/src/release.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.c" afterPath="$PROJECT_DIR$/src/util.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util.h" afterPath="$PROJECT_DIR$/src/util.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.h" afterPath="$PROJECT_DIR$/src/rdb.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -136,8 +44,8 @@
       <file leaf-file-name="rdb.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rdb.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="4995" column="0" lean-forward="true" selection-start-line="4995" selection-start-column="0" selection-end-line="4995" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="2160" column="19" lean-forward="true" selection-start-line="2160" selection-start-column="19" selection-end-line="2160" selection-end-column="19" />
               <folding>
                 <element signature="e#1611#1630#0" expanded="true" />
                 <element signature="e#16282#16912#0" expanded="false" />
@@ -179,50 +87,7 @@
                 <element signature="e#70403#76728#0" expanded="false" />
                 <element signature="e#76730#77020#0" expanded="false" />
                 <element signature="e#77022#78171#0" expanded="false" />
-                <element signature="e#78196#90242#0" expanded="false" />
-                <element signature="e#90244#102209#0" expanded="false" />
-                <element signature="e#102211#114294#0" expanded="false" />
-                <element signature="e#114296#126976#0" expanded="false" />
-                <element signature="e#126978#139544#0" expanded="false" />
-                <element signature="e#139546#152158#0" expanded="false" />
-                <element signature="e#152160#164315#0" expanded="false" />
-                <element signature="e#164317#176451#0" expanded="false" />
-                <element signature="e#176453#188477#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stdio.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/stdio.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6545">
-              <caret line="385" column="11" lean-forward="false" selection-start-line="385" selection-start-column="11" selection-end-line="385" selection-end-column="11" />
-              <folding>
-                <element signature="e#8054#8427#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11866">
-              <caret line="698" column="20" lean-forward="false" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="20" />
-              <folding>
-                <element signature="e#22975#26601#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="util.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/util.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -230,8 +95,8 @@
       <file leaf-file-name="rdb.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/rdb.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2431">
-              <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+            <state relative-caret-position="640">
+              <caret line="142" column="57" lean-forward="false" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -241,10 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>myRdbGenericLoadStringObject</find>
-      <find>rdbGenericLoadStringObject</find>
-      <find>OBJ_ENCODING_SKIPLIST</find>
-      <find>output_file</find>
       <find>ziplistGetObject</find>
       <find>zsetConvert</find>
       <find>RDB_TYPE_ZSET_ZIPLIST</find>
@@ -260,7 +121,6 @@
       <find>serverLog</find>
       <find>compKeySnsLen</find>
       <find>cpCompKeySns</find>
-      <find>cJSON</find>
       <find>compKeyShopActiveobjectsLen</find>
       <find>compKeyShopActiveobjects</find>
       <find>add</find>
@@ -271,6 +131,11 @@
       <find>keyLen</find>
       <find>keyNo</find>
       <find>keyNoInt</find>
+      <find>cJSON</find>
+      <find>cJSON_</find>
+      <find>cJSON_A</find>
+      <find>cJSON_Ad</find>
+      <find>cJSON_Add</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -280,8 +145,8 @@
       <replace>compKeyAccLen</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$/src</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -301,12 +166,12 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/db.c" />
         <option value="$PROJECT_DIR$/src/object.c" />
-        <option value="$PROJECT_DIR$/src/rdb.h" />
         <option value="$PROJECT_DIR$/src/t_hash.c" />
         <option value="$PROJECT_DIR$/src/server.h" />
         <option value="$PROJECT_DIR$/src/t_zset.c" />
         <option value="$PROJECT_DIR$/src/util.c" />
         <option value="$PROJECT_DIR$/src/util.h" />
+        <option value="$PROJECT_DIR$/src/rdb.h" />
         <option value="$PROJECT_DIR$/src/rdb.c" />
       </list>
     </option>
@@ -366,7 +231,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qiuqiu-dmp-rdb2json-test" />
+              <option name="myItemId" value="fast-rdb2json-tool" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -376,7 +241,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="qiuqiu-dmp-rdb2json-test" />
+              <option name="myItemId" value="fast-rdb2json-tool" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -389,7 +254,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="/mnt/winShare/rdb.c" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt" />
@@ -661,11 +526,12 @@
       <workItem from="1525331464482" duration="973000" />
       <workItem from="1525332816410" duration="5831000" />
       <workItem from="1525342139357" duration="1050000" />
+      <workItem from="1525595595328" duration="670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171716000" />
+    <option name="totallyTimeSpent" value="172386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -678,17 +544,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="985" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18739635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18960752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20969696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18358208" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32388058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -697,7 +565,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -726,7 +593,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -790,15 +657,6 @@
             <element signature="e#70403#76728#0" expanded="false" />
             <element signature="e#76730#77020#0" expanded="false" />
             <element signature="e#77022#78171#0" expanded="false" />
-            <element signature="e#78196#90242#0" expanded="false" />
-            <element signature="e#90244#102209#0" expanded="false" />
-            <element signature="e#102211#114294#0" expanded="false" />
-            <element signature="e#114296#126976#0" expanded="false" />
-            <element signature="e#126978#139544#0" expanded="false" />
-            <element signature="e#139546#152158#0" expanded="false" />
-            <element signature="e#152160#164315#0" expanded="false" />
-            <element signature="e#164317#176451#0" expanded="false" />
-            <element signature="e#176453#188477#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -877,15 +735,6 @@
             <element signature="e#70403#76728#0" expanded="false" />
             <element signature="e#76730#77020#0" expanded="false" />
             <element signature="e#77022#78171#0" expanded="false" />
-            <element signature="e#78196#90242#0" expanded="false" />
-            <element signature="e#90244#102209#0" expanded="false" />
-            <element signature="e#102211#114294#0" expanded="false" />
-            <element signature="e#114296#126976#0" expanded="false" />
-            <element signature="e#126978#139544#0" expanded="false" />
-            <element signature="e#139546#152158#0" expanded="false" />
-            <element signature="e#152160#164315#0" expanded="false" />
-            <element signature="e#164317#176451#0" expanded="false" />
-            <element signature="e#176453#188477#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1091,7 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="152" column="13" lean-forward="false" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1137,29 +985,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///mnt/winShare/rdb.c" />
-    <entry file="file://$PROJECT_DIR$/src/rdb.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="20" lean-forward="false" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../rdb.c" />
     <entry file="file:///usr/include/string.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="346" column="13" lean-forward="false" selection-start-line="346" selection-start-column="13" selection-end-line="346" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/stdio.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6545">
-          <caret line="385" column="11" lean-forward="false" selection-start-line="385" selection-start-column="11" selection-end-line="385" selection-end-column="11" />
-          <folding>
-            <element signature="e#8054#8427#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1170,28 +1000,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util.c">
+    <entry file="file:///usr/include/stdio.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11866">
-          <caret line="698" column="20" lean-forward="false" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="20" />
+        <state relative-caret-position="759">
+          <caret line="385" column="11" lean-forward="false" selection-start-line="385" selection-start-column="11" selection-end-line="385" selection-end-column="11" />
           <folding>
-            <element signature="e#22975#26601#0" expanded="true" />
+            <element signature="e#8054#8427#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/util.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
+        <state relative-caret-position="759">
           <caret line="49" column="28" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="698" column="20" lean-forward="false" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="20" />
+          <folding>
+            <element signature="e#22975#26601#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rdb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="142" column="57" lean-forward="false" selection-start-line="142" selection-start-column="57" selection-end-line="142" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rdb.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="4995" column="0" lean-forward="true" selection-start-line="4995" selection-start-column="0" selection-end-line="4995" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="2160" column="19" lean-forward="true" selection-start-line="2160" selection-start-column="19" selection-end-line="2160" selection-end-column="19" />
           <folding>
             <element signature="e#1611#1630#0" expanded="true" />
             <element signature="e#16282#16912#0" expanded="false" />
@@ -1233,15 +1081,6 @@
             <element signature="e#70403#76728#0" expanded="false" />
             <element signature="e#76730#77020#0" expanded="false" />
             <element signature="e#77022#78171#0" expanded="false" />
-            <element signature="e#78196#90242#0" expanded="false" />
-            <element signature="e#90244#102209#0" expanded="false" />
-            <element signature="e#102211#114294#0" expanded="false" />
-            <element signature="e#114296#126976#0" expanded="false" />
-            <element signature="e#126978#139544#0" expanded="false" />
-            <element signature="e#139546#152158#0" expanded="false" />
-            <element signature="e#152160#164315#0" expanded="false" />
-            <element signature="e#164317#176451#0" expanded="false" />
-            <element signature="e#176453#188477#0" expanded="false" />
           </folding>
         </state>
       </provider>

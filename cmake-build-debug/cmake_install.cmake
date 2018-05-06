@@ -1,4 +1,4 @@
-# Install script for directory: /home/wxf/qiuqiu-dmp-rdb2json-test
+# Install script for directory: /mnt/winShare/fast-rdb2json-tool
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/wxf/qiuqiu-dmp-rdb2json-test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/winShare/fast-rdb2json-tool/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
