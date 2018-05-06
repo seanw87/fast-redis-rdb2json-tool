@@ -1,9 +1,10 @@
 # fast-rdb2json-tool
 
-##parse redis rdb file as fast as you can imagine##
+## parse redis rdb file as fast as you can imagine ##
 
 This rdb file parsing tool is based on redis 4.0.2 source. Simply add cJSON module and push everything into json output.
-###It's much faster than most of the tools based on python or lua plugin!###
+
+### It's much faster than most of the tools based on python or lua plugin! ###
 
 Usage:
 ```
