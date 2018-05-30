@@ -29,6 +29,7 @@
  */
 
 #include "server.h"
+#include "base64/encode.c"
 #include <math.h>
 #include <ctype.h>
 
@@ -45,6 +46,23 @@ robj *createObject(int type, void *ptr) {
     o->ptr = ptr;
     o->refcount = 1;
 
+    /* Set the LRU to the current lruclock (minutes resolution), or
+     * alternatively the LFU counter. */
+    if (server.maxmemory_policy & MAXMEMORY_FLAG_LFU) {
+        o->lru = (LFUGetTimeInMinutes()<<8) | LFU_INIT_VAL;
+    } else {
+        o->lru = LRU_CLOCK();
+    }
+    return o;
+}
+
+robj *myCreateObject(int type, void *ptr) {
+    robj *o = zmalloc(sizeof(*o));
+    o->type = type;
+    o->encoding = OBJ_ENCODING_RAW;
+    o->ptr = ptr;
+    o->refcount = 1;
+//    serverLog(LL_NOTICE, "==========, 0->ptr: %s, type: %d", o->ptr, type);
     /* Set the LRU to the current lruclock (minutes resolution), or
      * alternatively the LFU counter. */
     if (server.maxmemory_policy & MAXMEMORY_FLAG_LFU) {
@@ -75,7 +93,11 @@ robj *makeObjectShared(robj *o) {
 /* Create a string object with encoding OBJ_ENCODING_RAW, that is a plain
  * string object where o->ptr points to a proper sds string. */
 robj *createRawStringObject(const char *ptr, size_t len) {
-    return createObject(OBJ_STRING, sdsnewlen(ptr,len));
+    return myCreateObject(OBJ_STRING, sdsnewlen(ptr,len));
+}
+
+robj *myCreateRawStringObject(const char *ptr, size_t len) {
+    return myCreateObject(OBJ_STRING, sdsnewlen(ptr,len));
 }
 
 /* Create a string object with encoding OBJ_ENCODING_EMBSTR, that is
@@ -119,6 +141,13 @@ robj *createStringObject(const char *ptr, size_t len) {
         return createEmbeddedStringObject(ptr,len);
     else
         return createRawStringObject(ptr,len);
+}
+
+robj *myCreateStringObject(const char *ptr, size_t len) {
+    if (len <= OBJ_ENCODING_EMBSTR_SIZE_LIMIT)
+        return createEmbeddedStringObject(ptr,len);
+    else
+        return myCreateRawStringObject(ptr,len);
 }
 
 robj *createStringObjectFromLongLong(long long value) {
@@ -445,6 +474,103 @@ robj *tryObjectEncoding(robj *o) {
     {
         o->ptr = sdsRemoveFreeSpace(o->ptr);
     }
+
+    /* Return the original object. */
+    return o;
+}
+
+robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
+    long value;
+    sds s = o->ptr;
+    size_t len;
+
+    /* Make sure this is a string object, the only type we encode
+     * in this function. Other types use encoded memory efficient
+     * representations but are handled by the commands implementing
+     * the type. */
+    serverAssertWithInfo(NULL,o,o->type == OBJ_STRING);
+
+    /* We try some specialized encoding only for objects that are
+     * RAW or EMBSTR encoded, in other words objects that are still
+     * in represented by an actually array of chars. */
+    if (!sdsEncodedObject(o)) return o;
+
+    /* It's not safe to encode shared objects: shared objects can be shared
+     * everywhere in the "object space" of Redis and may end in places where
+     * they are not handled. We handle them only as values in the keyspace. */
+    if (o->refcount > 1) return o;
+
+    /* Check if we can represent this string as a long integer.
+     * Note that we are sure that a string larger than 20 chars is not
+     * representable as a 32 nor 64 bit integer. */
+    len = sdslen(s);
+    if (len <= 20 && string2l(s,len,&value)) {
+        /* This object is encodable as a long. Try to use a shared object.
+         * Note that we avoid using shared integers when maxmemory is used
+         * because every object needs to have a private LRU field for the LRU
+         * algorithm to work well. */
+        if ((server.maxmemory == 0 ||
+             !(server.maxmemory_policy & MAXMEMORY_FLAG_NO_SHARED_INTEGERS)) &&
+            value >= 0 &&
+            value < OBJ_SHARED_INTEGERS)
+        {
+            decrRefCount(o);
+            incrRefCount(shared.integers[value]);
+            return shared.integers[value];
+        } else {
+            if (o->encoding == OBJ_ENCODING_RAW) sdsfree(o->ptr);
+            o->encoding = OBJ_ENCODING_INT;
+            o->ptr = (void*) value;
+            return o;
+        }
+    }
+
+    /* If the string is small and is still RAW encoded,
+     * try the EMBSTR encoding which is more efficient.
+     * In this representation the object and the SDS string are allocated
+     * in the same chunk of memory to save space and cache misses. */
+    if (len <= OBJ_ENCODING_EMBSTR_SIZE_LIMIT) {
+        robj *emb;
+
+        if (o->encoding == OBJ_ENCODING_EMBSTR) return o;
+        emb = createEmbeddedStringObject(s,sdslen(s));
+        decrRefCount(o);
+        return emb;
+    }
+
+    /* We can't encode the object...
+     *
+     * Do the last try, and at least optimize the SDS string inside
+     * the string object to require little space, in case there
+     * is more than 10% of free space at the end of the SDS string.
+     *
+     * We do that only for relatively large strings as this branch
+     * is only entered if the length of the string is greater than
+     * OBJ_ENCODING_EMBSTR_SIZE_LIMIT. */
+    if (o->encoding == OBJ_ENCODING_RAW &&
+        sdsavail(s) > len/10)
+    {
+        o->ptr = sdsRemoveFreeSpace(o->ptr);
+    }
+
+//    if (strcmp(redis_key, "matchlist") == 0) {
+    if (len != strlen((char *)o->ptr)) {
+        int thisi;
+        char * thisptr = (char *) o->ptr;
+
+        char hextotal[len * 2 + 1];
+        hextotal[0] = '\0';
+        char hexread[3];
+        for (thisi = 0; thisi < len; thisi++) {
+            sprintf(hexread, "%02x", 0xFF & thisptr[thisi]);
+            strcat(hextotal, hexread);
+        }
+//        printf("final hex: %s \n", hextotal);
+        cJSON_AddStringToObject(root, "hexval", hextotal);
+    } else {
+        cJSON_AddStringToObject(root, "val", (char *)o->ptr);
+    }
+
 
     /* Return the original object. */
     return o;

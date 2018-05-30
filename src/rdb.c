@@ -673,12 +673,64 @@ robj *myRdbGenericLoadStringObject(rio *rdb, int flags) {
     }
 }
 
+robj *myRdbGenericLoadStringObject2(rio *rdb, int flags, char* redis_key) {
+    int encode = flags & RDB_LOAD_ENC;
+    int plain = flags & RDB_LOAD_PLAIN;
+    int sds = flags & RDB_LOAD_SDS;
+    int isencoded;
+    uint64_t len;
+    size_t *lenptr;
+
+    len = rdbLoadLen(rdb,&isencoded);
+    if (isencoded) {
+        switch(len) {
+            case RDB_ENC_INT8:
+            case RDB_ENC_INT16:
+            case RDB_ENC_INT32:
+                return myRdbLoadIntegerObject(rdb,len,flags);
+                return NULL;
+            case RDB_ENC_LZF:
+                return rdbLoadLzfStringObject(rdb,flags,lenptr);
+                return NULL;
+            default:
+                rdbExitReportCorruptRDB("Unknown RDB string encoding type %d",len);
+        }
+    }
+
+    if (len == RDB_LENERR) return NULL;
+    if (plain || sds) {
+        void *buf = plain ? zmalloc(len) : sdsnewlen(NULL,len);
+        if (lenptr) *lenptr = len;
+        if (len && rioRead(rdb,buf,len) == 0) {
+            if (plain)
+                zfree(buf);
+            else
+                sdsfree(buf);
+            return NULL;
+        }
+        return buf;
+    } else {
+        robj *o = encode ? myCreateStringObject(NULL,len) :
+                  createRawStringObject(NULL,len);
+        if (len && rioRead(rdb,o->ptr,len) == 0) {
+            decrRefCount(o);
+            return NULL;
+        }
+
+        return o;
+    }
+}
+
 robj *rdbLoadStringObject(rio *rdb) {
     return myRdbGenericLoadStringObject(rdb,RDB_LOAD_NONE);
 }
 
 robj *rdbLoadEncodedStringObject(rio *rdb) {
     return myRdbGenericLoadStringObject(rdb,RDB_LOAD_ENC);
+}
+
+robj *myRdbLoadEncodedStringObject(rio *rdb, char * redis_key) {
+    return myRdbGenericLoadStringObject2(rdb,RDB_LOAD_ENC, redis_key);
 }
 
 /* Save a double value. Doubles are saved as strings prefixed by an unsigned
@@ -2166,8 +2218,10 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
 
     if (rdbtype == RDB_TYPE_STRING) {
         /* Read string value */
-        if ((o = rdbLoadEncodedStringObject(rdb)) == NULL) return NULL;
-        o = tryObjectEncoding(o);
+        if ((o = myRdbLoadEncodedStringObject(rdb, redis_key)) == NULL) return NULL;
+
+//        o = tryObjectEncoding(o);
+        o = myTryObjectEncoding(o, root, redis_key);
     } else if (rdbtype == RDB_TYPE_LIST) {
         /* Read list value */
         if ((len = rdbLoadLen(rdb,NULL)) == RDB_LENERR) return NULL;
