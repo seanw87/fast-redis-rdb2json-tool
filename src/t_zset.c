@@ -1183,6 +1183,87 @@ void zsetConvert(robj *zobj, int encoding) {
     }
 }
 
+char* myZsetConvert(robj *zobj, int encoding) {
+    zset *zs;
+    zskiplistNode *node, *next;
+    sds ele;
+    double score;
+
+    if (zobj->encoding == encoding) return "";
+    if (zobj->encoding == OBJ_ENCODING_ZIPLIST) {
+        unsigned char *zl = zobj->ptr;
+        unsigned char *eptr, *sptr;
+        unsigned char *vstr;
+        unsigned int vlen;
+        long long vlong;
+
+        if (encoding != OBJ_ENCODING_SKIPLIST)
+            serverPanic("Unknown target encoding");
+
+        zs = zmalloc(sizeof(*zs));
+        zs->dict = dictCreate(&zsetDictType,NULL);
+        zs->zsl = zslCreate();
+
+        eptr = ziplistIndex(zl,0);
+        serverAssertWithInfo(NULL,zobj,eptr != NULL);
+        sptr = ziplistNext(zl,eptr);
+        serverAssertWithInfo(NULL,zobj,sptr != NULL);
+
+        while (eptr != NULL) {
+            score = zzlGetScore(sptr);
+            serverAssertWithInfo(NULL,zobj,ziplistGet(eptr,&vstr,&vlen,&vlong));
+            if (vstr == NULL)
+                ele = sdsfromlonglong(vlong);
+            else
+                ele = sdsnewlen((char*)vstr,vlen);
+
+            node = zslInsert(zs->zsl,score,ele);
+            serverAssert(dictAdd(zs->dict,ele,&node->score) == DICT_OK);
+            zzlNext(zl,&eptr,&sptr);
+        }
+
+        zfree(zobj->ptr);
+        zobj->ptr = zs;
+        zobj->encoding = OBJ_ENCODING_SKIPLIST;
+    } else if (zobj->encoding == OBJ_ENCODING_SKIPLIST) {
+        unsigned char *zl = ziplistNew();
+
+        if (encoding != OBJ_ENCODING_ZIPLIST)
+            serverPanic("Unknown target encoding");
+
+        /* Approach similar to zslFree(), since we want to free the skiplist at
+         * the same time as creating the ziplist. */
+        zs = zobj->ptr;
+        dictRelease(zs->dict);
+        node = zs->zsl->header->level[0].forward;
+        zfree(zs->zsl->header);
+        zfree(zs->zsl);
+
+        cJSON *items, *item;
+        items = cJSON_CreateArray();
+
+        while (node) {
+            cJSON_AddItemToArray(items, item = cJSON_CreateObject());
+            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)node->ele));
+            cJSON_AddItemToObject(item, "num", cJSON_CreateNumber(node->score));
+
+            zl = zzlInsertAt(zl,NULL,node->ele,node->score);
+            next = node->level[0].forward;
+            zslFreeNode(node);
+            node = next;
+        }
+
+        zfree(zs);
+        zobj->ptr = zl;
+        zobj->encoding = OBJ_ENCODING_ZIPLIST;
+
+        char* itemsStr = cJSON_PrintUnformatted(items);
+        return itemsStr;
+    } else {
+        serverPanic("Unknown sorted set encoding");
+    }
+}
+
 char* zsetConvertShopActiveobjects(robj *zobj, int encoding) {
     zset *zs;
     zskiplistNode *node, *next;

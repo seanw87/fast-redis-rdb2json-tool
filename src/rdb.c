@@ -2462,8 +2462,63 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
             case RDB_TYPE_ZSET_ZIPLIST:
                 o->type = OBJ_ZSET;
                 o->encoding = OBJ_ENCODING_ZIPLIST;
-                if (zsetLength(o) > server.zset_max_ziplist_entries)
-                    zsetConvert(o,OBJ_ENCODING_SKIPLIST);
+
+                char* itemsStr = "";
+                if (zsetLength(o) > server.zset_max_ziplist_entries) {
+                    itemsStr = myZsetConvert(o,OBJ_ENCODING_SKIPLIST);
+                } else {
+                    if (o->encoding == OBJ_ENCODING_ZIPLIST) {
+                        unsigned char *zl = o->ptr;
+                        unsigned char *eptr, *sptr;
+                        unsigned char *vstr;
+                        unsigned int vlen;
+                        long long vlong;
+
+                        zset *zs;
+                        zskiplistNode *node, *next;
+                        double score;
+
+                        zs = zmalloc(sizeof(*zs));
+                        zs->dict = dictCreate(&zsetDictType,NULL);
+                        zs->zsl = zslCreate();
+
+                        eptr = ziplistIndex(zl,0);
+                        serverAssertWithInfo(NULL,o,eptr != NULL);
+                        sptr = ziplistNext(zl,eptr);
+                        serverAssertWithInfo(NULL,o,sptr != NULL);
+
+                        cJSON *items, *item;
+                        items = cJSON_CreateArray();
+
+                        while (eptr != NULL) {
+                            score = zzlGetScore(sptr);
+                            serverAssertWithInfo(NULL,o,ziplistGet(eptr,&vstr,&vlen,&vlong));
+                            if (vstr == NULL)
+                                ele = sdsfromlonglong(vlong);
+                            else
+                                ele = sdsnewlen((char*)vstr,vlen);
+
+                            node = zslInsert(zs->zsl,score,ele);
+                            serverAssert(dictAdd(zs->dict,ele,&node->score) == DICT_OK);
+
+
+                            cJSON_AddItemToArray(items, item = cJSON_CreateObject());
+                            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)node->ele));
+                            cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(node->score));
+
+
+//                            serverLog(LL_NOTICE, "zsetLength(o) <= server.zset_max_ziplist_entries, o->ptr: %s, "
+//                                              "sdslen: %d, robj.type: %d, robj.encoding: %d, ele: %s, score: %f",
+//                                      (char*)o->ptr, len, o->type, o->encoding, (char*)node->ele, node->score);
+
+                            zzlNext(zl,&eptr,&sptr);
+                        }
+
+                        itemsStr = cJSON_PrintUnformatted(items);
+                    }
+                }
+                cJSON_AddStringToObject(root, redis_key, itemsStr);
+
                 break;
             case RDB_TYPE_HASH_ZIPLIST:
                 o->type = OBJ_HASH;
