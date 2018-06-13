@@ -2290,6 +2290,9 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         o = createZsetObject();
         zs = o->ptr;
 
+        cJSON *items, *item;
+        items = cJSON_CreateArray();
+
         /* Load every single element of the sorted set. */
         while(zsetlen--) {
             sds sdsele;
@@ -2310,7 +2313,13 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
 
             znode = zslInsert(zs->zsl,score,sdsele);
             dictAdd(zs->dict,sdsele,&znode->score);
+
+            cJSON_AddItemToArray(items, item = cJSON_CreateObject());
+            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)sdsele));
+            cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
         }
+
+        cJSON_AddItemToObject(root, redis_key, items);
 
         /* Convert *after* loading, since sorted sets are not stored ordered. */
         if (zsetLength(o) <= server.zset_max_ziplist_entries &&

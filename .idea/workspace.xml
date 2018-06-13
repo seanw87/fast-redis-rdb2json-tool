@@ -13,12 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f027095-dc38-4b99-8fdd-b4471c917ece" name="Default" comment="virgin commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb2json" afterPath="$PROJECT_DIR$/src/rdb2json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.c" afterPath="$PROJECT_DIR$/src/rdb.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/release.h" afterPath="$PROJECT_DIR$/src/release.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.h" afterPath="$PROJECT_DIR$/src/server.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_zset.c" afterPath="$PROJECT_DIR$/src/t_zset.c" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,77 +29,10 @@
     <favorites_list name="qiuqiu-dmp-rdb2json" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rdb.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rdb.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="2476" column="33" lean-forward="true" selection-start-line="2476" selection-start-column="33" selection-end-line="2476" selection-end-column="33" />
-              <folding>
-                <element signature="e#16282#16912#0" expanded="false" />
-                <element signature="e#16914#17386#0" expanded="false" />
-                <element signature="e#19358#20740#0" expanded="false" />
-                <element signature="e#23846#25436#0" expanded="false" />
-                <element signature="e#25438#25934#0" expanded="false" />
-                <element signature="e#25936#26345#0" expanded="false" />
-                <element signature="e#26347#26625#0" expanded="false" />
-                <element signature="e#26627#26809#0" expanded="false" />
-                <element signature="e#26811#27016#0" expanded="false" />
-                <element signature="e#27018#28437#0" expanded="false" />
-                <element signature="e#28439#28725#0" expanded="false" />
-                <element signature="e#28727#34242#0" expanded="false" />
-                <element signature="e#34244#34622#0" expanded="false" />
-                <element signature="e#34624#35457#0" expanded="false" />
-                <element signature="e#35459#35759#0" expanded="false" />
-                <element signature="e#35761#35982#0" expanded="false" />
-                <element signature="e#35984#36253#0" expanded="false" />
-                <element signature="e#36255#37416#0" expanded="false" />
-                <element signature="e#37418#40873#0" expanded="false" />
-                <element signature="e#40875#41912#0" expanded="false" />
-                <element signature="e#41914#43705#0" expanded="false" />
-                <element signature="e#43707#45541#0" expanded="false" />
-                <element signature="e#45543#45699#0" expanded="false" />
-                <element signature="e#56830#57265#0" expanded="false" />
-                <element signature="e#57267#57495#0" expanded="false" />
-                <element signature="e#57497#57570#0" expanded="false" />
-                <element signature="e#57572#58503#0" expanded="false" />
-                <element signature="e#58505#65487#0" expanded="false" />
-                <element signature="e#65489#66182#0" expanded="false" />
-                <element signature="e#66184#67752#0" expanded="false" />
-                <element signature="e#67754#71461#0" expanded="false" />
-                <element signature="e#71463#71933#0" expanded="false" />
-                <element signature="e#71935#78260#0" expanded="false" />
-                <element signature="e#78262#78552#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t_zset.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/t_zset.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="1193" column="38" lean-forward="true" selection-start-line="1193" selection-start-column="38" selection-end-line="1193" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="1554" column="48" lean-forward="false" selection-start-line="1554" selection-start-column="48" selection-end-line="1554" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>keyNo</find>
       <find>keyNoInt</find>
       <find>cJSON_</find>
       <find>cJSON_A</find>
@@ -131,8 +60,9 @@
       <find>myTryObjectEncoding</find>
       <find>cJSON</find>
       <find>zsetConvert</find>
-      <find>RDB_TYPE_ZSET_ZIPLIST</find>
       <find>myZsetConvert</find>
+      <find>RDB_TYPE_ZSET_ZIPLIST</find>
+      <find>RDB_TYPE_ZSET</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,10 +111,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="977" />
+    <option name="x" value="64" />
+    <option name="y" value="-11" />
+    <option name="width" value="1857" />
+    <option name="height" value="1025" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -251,7 +181,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/qiuqiu-dmp-rdb2json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt" />
@@ -527,12 +457,13 @@
       <workItem from="1527067155326" duration="4023000" />
       <workItem from="1527585956499" duration="11785000" />
       <workItem from="1527647234147" duration="23075000" />
-      <workItem from="1527751818582" duration="1213000" />
+      <workItem from="1527751818582" duration="1492000" />
+      <workItem from="1528876777209" duration="2192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213807000" />
+    <option name="totallyTimeSpent" value="216278000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,12 +475,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="977" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1025" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19845219" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20022063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20969696" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20991926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -751,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="408" column="4" lean-forward="false" selection-start-line="408" selection-start-column="4" selection-end-line="408" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8840">
           <caret line="520" column="66" lean-forward="false" selection-start-line="520" selection-start-column="12" selection-end-line="520" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,7 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="182" column="16" lean-forward="false" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-799">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -835,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1377">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -843,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1928">
           <caret line="19" column="75" lean-forward="true" selection-start-line="19" selection-start-column="75" selection-end-line="19" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -851,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="310" column="5" lean-forward="false" selection-start-line="310" selection-start-column="5" selection-end-line="310" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -874,7 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="159" column="24" lean-forward="false" selection-start-line="159" selection-start-column="24" selection-end-line="159" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="161" column="17" lean-forward="false" selection-start-line="161" selection-start-column="17" selection-end-line="161" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,30 +867,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="2060" column="18" lean-forward="false" selection-start-line="2060" selection-start-column="5" selection-end-line="2060" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="1554" column="48" lean-forward="false" selection-start-line="1554" selection-start-column="48" selection-end-line="1554" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/t_zset.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="1193" column="38" lean-forward="true" selection-start-line="1193" selection-start-column="38" selection-end-line="1193" selection-end-column="38" />
+        <state relative-caret-position="-776">
+          <caret line="1185" column="6" lean-forward="false" selection-start-line="1185" selection-start-column="6" selection-end-line="1185" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rdb.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="2476" column="33" lean-forward="true" selection-start-line="2476" selection-start-column="33" selection-end-line="2476" selection-end-column="33" />
+        <state relative-caret-position="153">
+          <caret line="2296" column="26" lean-forward="true" selection-start-line="2296" selection-start-column="26" selection-end-line="2296" selection-end-column="26" />
           <folding>
             <element signature="e#16282#16912#0" expanded="false" />
             <element signature="e#16914#17386#0" expanded="false" />
@@ -1006,6 +918,14 @@
             <element signature="e#71935#78260#0" expanded="false" />
             <element signature="e#78262#78552#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="1554" column="48" lean-forward="false" selection-start-line="1554" selection-start-column="48" selection-end-line="1554" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
