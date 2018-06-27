@@ -29,7 +29,7 @@
  */
 
 #include "server.h"
-#include "base64/encode.c"
+//#include "base64/encode.c"
 #include <math.h>
 #include <ctype.h>
 
@@ -532,7 +532,25 @@ robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
     if (len <= OBJ_ENCODING_EMBSTR_SIZE_LIMIT) {
         robj *emb;
 
-        if (o->encoding == OBJ_ENCODING_EMBSTR) return o;
+        if (o->encoding == OBJ_ENCODING_EMBSTR) {
+            if (len != strlen((char *)o->ptr)) {
+                int thisi;
+                char * thisptr = (char *) o->ptr;
+
+                char hextotal[len * 2 + 1];
+                hextotal[0] = '\0';
+                char hexread[3];
+                for (thisi = 0; thisi < len; thisi++) {
+                    sprintf(hexread, "%02x", 0xFF & thisptr[thisi]);
+                    strcat(hextotal, hexread);
+                }
+                cJSON_AddStringToObject(root, "hexval", hextotal);
+            } else {
+                cJSON_AddStringToObject(root, "val", (char *)o->ptr);
+            }
+
+            return o;
+        }
         emb = createEmbeddedStringObject(s,sdslen(s));
         decrRefCount(o);
         return emb;
@@ -553,7 +571,6 @@ robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
         o->ptr = sdsRemoveFreeSpace(o->ptr);
     }
 
-//    if (strcmp(redis_key, "matchlist") == 0) {
     if (len != strlen((char *)o->ptr)) {
         int thisi;
         char * thisptr = (char *) o->ptr;
@@ -565,7 +582,6 @@ robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
             sprintf(hexread, "%02x", 0xFF & thisptr[thisi]);
             strcat(hextotal, hexread);
         }
-//        printf("final hex: %s \n", hextotal);
         cJSON_AddStringToObject(root, "hexval", hextotal);
     } else {
         cJSON_AddStringToObject(root, "val", (char *)o->ptr);

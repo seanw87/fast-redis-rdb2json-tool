@@ -1750,9 +1750,9 @@ int rdbLoadRio(rio *rdb, rdbSaveInfo *rsi) {
                 /* All the fields with a name staring with '%' are considered
                  * information fields and are logged at startup with a log
                  * level of NOTICE. */
-                serverLog(LL_NOTICE,"RDB '%s': %s",
-                    (char*)auxkey->ptr,
-                    (char*)auxval->ptr);
+//                serverLog(LL_NOTICE,"RDB '%s': %s",
+//                    (char*)auxkey->ptr,
+//                    (char*)auxval->ptr);
             } else if (!strcasecmp(auxkey->ptr,"repl-stream-db")) {
                 if (rsi) rsi->repl_stream_db = atoi(auxval->ptr);
             } else if (!strcasecmp(auxkey->ptr,"repl-id")) {
@@ -2290,36 +2290,58 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         o = createZsetObject();
         zs = o->ptr;
 
-        cJSON *items, *item;
-        items = cJSON_CreateArray();
+        if (zsetlen < 100000) {
+            cJSON *items, *item;
+            items = cJSON_CreateArray();
+            /* Load every single element of the sorted set. */
+            while(zsetlen--) {
+                sds sdsele;
+                double score;
+                zskiplistNode *znode;
 
-        /* Load every single element of the sorted set. */
-        while(zsetlen--) {
-            sds sdsele;
-            double score;
-            zskiplistNode *znode;
+                if ((sdsele = rdbGenericLoadStringObject(rdb,RDB_LOAD_SDS,NULL))
+                    == NULL) return NULL;
 
-            if ((sdsele = rdbGenericLoadStringObject(rdb,RDB_LOAD_SDS,NULL))
-                == NULL) return NULL;
+                if (rdbtype == RDB_TYPE_ZSET_2) {
+                    if (rdbLoadBinaryDoubleValue(rdb,&score) == -1) return NULL;
+                } else {
+                    if (rdbLoadDoubleValue(rdb,&score) == -1) return NULL;
+                }
 
-            if (rdbtype == RDB_TYPE_ZSET_2) {
-                if (rdbLoadBinaryDoubleValue(rdb,&score) == -1) return NULL;
-            } else {
-                if (rdbLoadDoubleValue(rdb,&score) == -1) return NULL;
+                /* Don't care about integer-encoded strings. */
+                if (sdslen(sdsele) > maxelelen) maxelelen = sdslen(sdsele);
+
+                znode = zslInsert(zs->zsl,score,sdsele);
+                dictAdd(zs->dict,sdsele,&znode->score);
+
+                cJSON_AddItemToArray(items, item = cJSON_CreateObject());
+                cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)sdsele));
+                cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
             }
+            cJSON_AddItemToObject(root, redis_key, items);
+        } else {
+            /* Load every single element of the sorted set. */
+            while(zsetlen--) {
+                sds sdsele;
+                double score;
+                zskiplistNode *znode;
 
-            /* Don't care about integer-encoded strings. */
-            if (sdslen(sdsele) > maxelelen) maxelelen = sdslen(sdsele);
+                if ((sdsele = rdbGenericLoadStringObject(rdb,RDB_LOAD_SDS,NULL))
+                    == NULL) return NULL;
 
-            znode = zslInsert(zs->zsl,score,sdsele);
-            dictAdd(zs->dict,sdsele,&znode->score);
+                if (rdbtype == RDB_TYPE_ZSET_2) {
+                    if (rdbLoadBinaryDoubleValue(rdb,&score) == -1) return NULL;
+                } else {
+                    if (rdbLoadDoubleValue(rdb,&score) == -1) return NULL;
+                }
 
-            cJSON_AddItemToArray(items, item = cJSON_CreateObject());
-            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)sdsele));
-            cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
+                /* Don't care about integer-encoded strings. */
+                if (sdslen(sdsele) > maxelelen) maxelelen = sdslen(sdsele);
+
+                znode = zslInsert(zs->zsl,score,sdsele);
+                dictAdd(zs->dict,sdsele,&znode->score);
+            }
         }
-
-        cJSON_AddItemToObject(root, redis_key, items);
 
         /* Convert *after* loading, since sorted sets are not stored ordered. */
         if (zsetLength(o) <= server.zset_max_ziplist_entries &&
