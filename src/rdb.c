@@ -2214,7 +2214,7 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         t = strtok(NULL, d);
     }
 
-//    serverLog(LL_NOTICE, "Addobjects rdbtype: %d, userid: %s, redis_key: %s", rdbtype, id, redis_key);
+    serverLog(LL_NOTICE, "myRdbLoadObjectCommon rdbtype: %d, redis_key: %s", rdbtype, redis_key);
 
     if (rdbtype == RDB_TYPE_STRING) {
         /* Read string value */
@@ -2290,8 +2290,8 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         o = createZsetObject();
         zs = o->ptr;
 
-        if (zsetlen < 100000) {
-            cJSON *items, *item;
+        if (zsetlen < 1000000000000) {
+            cJSON *items = 0;
             items = cJSON_CreateArray();
             /* Load every single element of the sorted set. */
             while(zsetlen--) {
@@ -2300,12 +2300,18 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                 zskiplistNode *znode;
 
                 if ((sdsele = rdbGenericLoadStringObject(rdb,RDB_LOAD_SDS,NULL))
-                    == NULL) return NULL;
+                    == NULL) {
+                    return NULL;
+                }
 
                 if (rdbtype == RDB_TYPE_ZSET_2) {
-                    if (rdbLoadBinaryDoubleValue(rdb,&score) == -1) return NULL;
+                    if (rdbLoadBinaryDoubleValue(rdb,&score) == -1) {
+                        return NULL;
+                    }
                 } else {
-                    if (rdbLoadDoubleValue(rdb,&score) == -1) return NULL;
+                    if (rdbLoadDoubleValue(rdb,&score) == -1) {
+                        return NULL;
+                    }
                 }
 
                 /* Don't care about integer-encoded strings. */
@@ -2314,9 +2320,16 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                 znode = zslInsert(zs->zsl,score,sdsele);
                 dictAdd(zs->dict,sdsele,&znode->score);
 
-                cJSON_AddItemToArray(items, item = cJSON_CreateObject());
-                cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)sdsele));
-                cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
+
+                cJSON *item = 0;
+                item = cJSON_CreateObject();
+                if (item) {
+                    if (items) {
+                        cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)sdsele));
+                        cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
+                        cJSON_AddItemToArray(items, item);
+                    }
+                }
             }
             cJSON_AddItemToObject(root, redis_key, items);
         } else {
@@ -2591,9 +2604,9 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
     }
 
     char *s = cJSON_PrintUnformatted(root);
-    cJSON_Delete(root);
     fputs(s, dest);
     fputs("\r\n", dest);
+    cJSON_Delete(root);
     free(s);
 
 //    serverLog(LL_NOTICE, ":) rdbtype:%d, output:%s", rdbtype, s);

@@ -16,7 +16,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb2json" afterPath="$PROJECT_DIR$/src/rdb2json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Makefile.dep" afterPath="$PROJECT_DIR$/src/Makefile.dep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/object.c" afterPath="$PROJECT_DIR$/src/object.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cJSON.c" afterPath="$PROJECT_DIR$/src/cJSON.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.c" afterPath="$PROJECT_DIR$/src/rdb.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/release.h" afterPath="$PROJECT_DIR$/src/release.h" />
     </list>
@@ -34,24 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="object.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/object.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9214">
-              <caret line="542" column="55" lean-forward="false" selection-start-line="542" selection-start-column="55" selection-end-line="542" selection-end-column="55" />
-              <folding>
-                <element signature="e#1692#1709#0" expanded="true" />
-                <element signature="e#12296#15360#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="rdb.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rdb.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="1756" column="65" lean-forward="true" selection-start-line="1756" selection-start-column="65" selection-end-line="1756" selection-end-column="65" />
+            <state relative-caret-position="463">
+              <caret line="2329" column="35" lean-forward="true" selection-start-line="2329" selection-start-column="35" selection-end-line="2329" selection-end-column="35" />
               <folding>
                 <element signature="e#16282#16912#0" expanded="false" />
                 <element signature="e#16914#17386#0" expanded="false" />
@@ -75,10 +62,12 @@
                 <element signature="e#41914#43705#0" expanded="false" />
                 <element signature="e#43707#45541#0" expanded="false" />
                 <element signature="e#45543#45699#0" expanded="false" />
+                <element signature="e#45701#56828#0" expanded="false" />
                 <element signature="e#56830#57265#0" expanded="false" />
                 <element signature="e#57267#57495#0" expanded="false" />
                 <element signature="e#57497#57570#0" expanded="false" />
                 <element signature="e#57572#58503#0" expanded="false" />
+                <element signature="e#58505#65493#0" expanded="false" />
                 <element signature="e#65495#66188#0" expanded="false" />
                 <element signature="e#66190#67758#0" expanded="false" />
                 <element signature="e#67760#71467#0" expanded="false" />
@@ -94,9 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rdbLoadEncodedStringObject</find>
-      <find>myCreateStringObject</find>
-      <find>createEmbeddedStringObject</find>
       <find>base64</find>
       <find>myRdbLoad</find>
       <find>cJSON_AddStringToObject</find>
@@ -108,7 +94,6 @@
       <find>configCommand</find>
       <find>i</find>
       <find>myTryObjectEncoding</find>
-      <find>cJSON</find>
       <find>zsetConvert</find>
       <find>myZsetConvert</find>
       <find>RDB_TYPE_ZSET_ZIPLIST</find>
@@ -124,6 +109,10 @@
       <find>myCreateObject</find>
       <find>obj</find>
       <find>serverLog</find>
+      <find>root</find>
+      <find>100000</find>
+      <find>cJSON</find>
+      <find>items</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -162,6 +151,7 @@
         <option value="$PROJECT_DIR$/src/server.h" />
         <option value="$PROJECT_DIR$/src/object.c" />
         <option value="$PROJECT_DIR$/src/rdb.c" />
+        <option value="$PROJECT_DIR$/src/cJSON.c" />
       </list>
     </option>
   </component>
@@ -176,7 +166,7 @@
     <option name="x" value="64" />
     <option name="y" value="-11" />
     <option name="width" value="1857" />
-    <option name="height" value="1025" />
+    <option name="height" value="995" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,7 +233,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/qiuqiu-dmp-rdb2json" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/CMakeLists.txt" />
@@ -529,12 +519,17 @@
       <workItem from="1529903161801" duration="1832000" />
       <workItem from="1529924174366" duration="6770000" />
       <workItem from="1530001225464" duration="2942000" />
-      <workItem from="1530071080161" duration="48000" />
+      <workItem from="1530071080161" duration="700000" />
+      <workItem from="1530153299776" duration="111000" />
+      <workItem from="1530605965452" duration="610000" />
+      <workItem from="1533701255368" duration="1016000" />
+      <workItem from="1539249558998" duration="2114000" />
+      <workItem from="1545718876745" duration="24815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240860000" />
+    <option name="totallyTimeSpent" value="270178000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -546,13 +541,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1025" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="995" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22056384" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19347706" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12746234" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1269461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -567,7 +563,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -678,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cJSON.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="1789" column="19" lean-forward="false" selection-start-line="1789" selection-start-column="19" selection-end-line="1789" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../rdb.c" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -739,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="955" column="15" lean-forward="false" selection-start-line="955" selection-start-column="15" selection-end-line="955" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="408" column="4" lean-forward="false" selection-start-line="408" selection-start-column="4" selection-end-line="408" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -855,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dict.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="264" column="4" lean-forward="false" selection-start-line="264" selection-start-column="4" selection-end-line="264" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/db.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -873,14 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="97" column="38" lean-forward="true" selection-start-line="97" selection-start-column="38" selection-end-line="97" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/stdio.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="363" column="11" lean-forward="false" selection-start-line="363" selection-start-column="11" selection-end-line="363" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -941,21 +907,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/util.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="698" column="4" lean-forward="false" selection-start-line="698" selection-start-column="4" selection-end-line="698" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dict.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="264" column="4" lean-forward="false" selection-start-line="264" selection-start-column="4" selection-end-line="264" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="331" column="12" lean-forward="false" selection-start-line="331" selection-start-column="12" selection-end-line="331" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/object.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9214">
-          <caret line="542" column="55" lean-forward="false" selection-start-line="542" selection-start-column="55" selection-end-line="542" selection-end-column="55" />
+        <state relative-caret-position="46">
+          <caret line="81" column="11" lean-forward="false" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
           <folding>
-            <element signature="e#1692#1709#0" expanded="true" />
+            <element signature="e#1692#1709#0" expanded="false" />
             <element signature="e#12296#15360#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cJSON.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="1794" column="5" lean-forward="true" selection-start-line="1794" selection-start-column="5" selection-end-line="1794" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/rdb.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="1756" column="65" lean-forward="true" selection-start-line="1756" selection-start-column="65" selection-end-line="1756" selection-end-column="65" />
+        <state relative-caret-position="463">
+          <caret line="2329" column="35" lean-forward="true" selection-start-line="2329" selection-start-column="35" selection-end-line="2329" selection-end-column="35" />
           <folding>
             <element signature="e#16282#16912#0" expanded="false" />
             <element signature="e#16914#17386#0" expanded="false" />
@@ -979,10 +976,12 @@
             <element signature="e#41914#43705#0" expanded="false" />
             <element signature="e#43707#45541#0" expanded="false" />
             <element signature="e#45543#45699#0" expanded="false" />
+            <element signature="e#45701#56828#0" expanded="false" />
             <element signature="e#56830#57265#0" expanded="false" />
             <element signature="e#57267#57495#0" expanded="false" />
             <element signature="e#57497#57570#0" expanded="false" />
             <element signature="e#57572#58503#0" expanded="false" />
+            <element signature="e#58505#65493#0" expanded="false" />
             <element signature="e#65495#66188#0" expanded="false" />
             <element signature="e#66190#67758#0" expanded="false" />
             <element signature="e#67760#71467#0" expanded="false" />

@@ -1760,30 +1760,58 @@ static cJSON *create_reference(const cJSON *item, const internal_hooks * const h
 }
 
 /* Add item to array/object. */
+//CJSON_PUBLIC(void) cJSON_AddItemToArray(cJSON *array, cJSON *item)
+//{
+//    cJSON *child = NULL;
+//
+//    if ((item == NULL) || (array == NULL))
+//    {
+//        return;
+//    }
+//
+//    child = array->child;
+//
+//    if (child == NULL)
+//    {
+//        /* list is empty, start new one */
+//        array->child = item;
+//    }
+//    else
+//    {
+//        /* append to the end */
+//        while (child->next)
+//        {
+//            child = child->next;
+//        }
+//        suffix_object(child, item);
+//    }
+//}
+
 CJSON_PUBLIC(void) cJSON_AddItemToArray(cJSON *array, cJSON *item)
 {
-    cJSON *child = NULL;
-
-    if ((item == NULL) || (array == NULL))
-    {
+    cJSON *c = array->child;
+    if (!item) {
         return;
     }
-
-    child = array->child;
-
-    if (child == NULL)
-    {
+    if (!c) {
         /* list is empty, start new one */
         array->child = item;
+        array->child->prev = item;
     }
-    else
-    {
+    else {
         /* append to the end */
-        while (child->next)
-        {
-            child = child->next;
+        if (array->child->prev) {
+            item->prev = array->child->prev;
+            array->child->prev->next = item;
+            array->child->prev = item;
+            item->next = NULL;
         }
-        suffix_object(child, item);
+        else {
+            while (c->next)
+                c = c->next;
+            suffix_object(c, item);
+            array->child->prev = item;
+        }
     }
 }
 
