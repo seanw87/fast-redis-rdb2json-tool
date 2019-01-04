@@ -2214,7 +2214,7 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         t = strtok(NULL, d);
     }
 
-    serverLog(LL_NOTICE, "myRdbLoadObjectCommon rdbtype: %d, redis_key: %s", rdbtype, redis_key);
+//    serverLog(LL_NOTICE, "myRdbLoadObjectCommon rdbtype: %d, redis_key: %s", rdbtype, redis_key);
 
     if (rdbtype == RDB_TYPE_STRING) {
         /* Read string value */
