@@ -1423,7 +1423,7 @@ robj *dupStringObject(const robj *o);
 int isSdsRepresentableAsLongLong(sds s, long long *llval);
 int isObjectRepresentableAsLongLong(robj *o, long long *llongval);
 robj *tryObjectEncoding(robj *o);
-robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key);
+robj *myTryObjectEncoding(robj *o, cJSON *root);
 robj *myCreateStringObject(const char *ptr, size_t len);
 robj *getDecodedObject(robj *o);
 size_t stringObjectLen(robj *o);
@@ -1635,6 +1635,7 @@ int setTypeRandomElement(robj *setobj, sds *sdsele, int64_t *llele);
 unsigned long setTypeRandomElements(robj *set, unsigned long count, robj *aux_set);
 unsigned long setTypeSize(const robj *subject);
 void setTypeConvert(robj *subject, int enc);
+void mySetTypeConvert(robj *subject, int enc, cJSON *root);
 
 /* Hash data type */
 #define HASH_SET_TAKE_FIELD (1<<0)

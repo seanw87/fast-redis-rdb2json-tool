@@ -479,7 +479,7 @@ robj *tryObjectEncoding(robj *o) {
     return o;
 }
 
-robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
+robj *myTryObjectEncoding(robj *o, cJSON *root) {
     long value;
     sds s = o->ptr;
     size_t len;
@@ -534,7 +534,7 @@ robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
 
         if (o->encoding == OBJ_ENCODING_EMBSTR) {
             if (len != strlen((char *)o->ptr)) {
-                int thisi;
+                unsigned int thisi;
                 char * thisptr = (char *) o->ptr;
 
                 char hextotal[len * 2 + 1];
@@ -572,7 +572,7 @@ robj *myTryObjectEncoding(robj *o, cJSON *root, char* redis_key) {
     }
 
     if (len != strlen((char *)o->ptr)) {
-        int thisi;
+        unsigned int thisi;
         char * thisptr = (char *) o->ptr;
 
         char hextotal[len * 2 + 1];

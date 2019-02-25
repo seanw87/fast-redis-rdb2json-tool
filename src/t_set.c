@@ -261,6 +261,44 @@ void setTypeConvert(robj *setobj, int enc) {
     }
 }
 
+void mySetTypeConvert(robj *setobj, int enc, cJSON *root) {
+    setTypeIterator *si;
+    serverAssertWithInfo(NULL,setobj,setobj->type == OBJ_SET &&
+                                     setobj->encoding == OBJ_ENCODING_INTSET);
+
+    if (enc == OBJ_ENCODING_HT) {
+        int64_t intele;
+        dict *d = dictCreate(&setDictType,NULL);
+        sds element;
+
+        /* Presize the dict to avoid rehashing */
+        dictExpand(d,intsetLen(setobj->ptr));
+
+        cJSON *items = 0;
+        items = cJSON_CreateArray();
+
+        /* To add the elements we extract integers and create redis objects */
+        si = setTypeInitIterator(setobj);
+        while (setTypeNext(si,&element,&intele) != -1) {
+            element = sdsfromlonglong(intele);
+
+            if (items) {
+                cJSON_AddNumberToObject(items, "tmp", intele);
+            }
+
+            serverAssert(dictAdd(d,element,NULL) == DICT_OK);
+        }
+        cJSON_AddItemToObject(root, "items", items);
+        setTypeReleaseIterator(si);
+
+        setobj->encoding = OBJ_ENCODING_HT;
+        zfree(setobj->ptr);
+        setobj->ptr = d;
+    } else {
+        serverPanic("Unsupported set conversion");
+    }
+}
+
 void saddCommand(client *c) {
     robj *set;
     int j, added = 0;

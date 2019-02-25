@@ -1262,6 +1262,7 @@ char* myZsetConvert(robj *zobj, int encoding) {
     } else {
         serverPanic("Unknown sorted set encoding");
     }
+    return "";
 }
 
 char* zsetConvertShopActiveobjects(robj *zobj, int encoding) {
@@ -1343,6 +1344,7 @@ char* zsetConvertShopActiveobjects(robj *zobj, int encoding) {
     } else {
         serverPanic("Unknown sorted set encoding");
     }
+    return "";
 }
 
 char* zsetConvertShopAddobjects(robj *zobj, int encoding) {
@@ -1424,6 +1426,7 @@ char* zsetConvertShopAddobjects(robj *zobj, int encoding) {
     } else {
         serverPanic("Unknown sorted set encoding");
     }
+    return "";
 }
 
 /* Convert the sorted set object into a ziplist if it is not already a ziplist

@@ -51,6 +51,15 @@
 #include <assert.h>
 #endif
 
+#ifdef UNUSED
+#elif defined(__GNUC__)
+# define UNUSED(V) ((void) V)
+#elif defined(__LCLINT__)
+# define UNUSED(x) /*@unused@*/ x
+#else
+# define UNUSED(x) x
+#endif
+
 /* Using dictEnableResize() / dictDisableResize() we make possible to
  * enable/disable resizing of the hash table as needed. This is very important
  * for Redis, as we use copy-on-write and don't want to move too much memory
@@ -264,6 +273,9 @@ static void _dictRehashStep(dict *d) {
 /* Add an element to the target hash table */
 int dictAdd(dict *d, void *key, void *val)
 {
+    UNUSED(d);
+    UNUSED(key);
+    UNUSED(val);
 /*rdb2json fix*/
 //    dictEntry *entry = dictAddRaw(d,key,NULL);
 //

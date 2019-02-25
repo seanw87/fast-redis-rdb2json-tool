@@ -1,3 +1,0 @@
-/Users/wxf/Documents/GitHub/fast-rdb2json-tool/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/wxf/Documents/GitHub/fast-rdb2json-tool/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/wxf/Documents/GitHub/fast-rdb2json-tool/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir

@@ -158,7 +158,7 @@ int rdbLoadLenByRef(rio *rdb, int *isencoded, uint64_t *lenptr) {
     if (isencoded) *isencoded = 0;
     if (rioRead(rdb,buf,1) == 0) return -1;
     type = (buf[0]&0xC0)>>6;
-    serverLog(LL_NOTICE, "!!!rdbloadlen type: %d", type);
+//    serverLog(LL_NOTICE, "!!!rdbloadlen type: %d", type);
     if (type == RDB_ENCVAL) {
         /* Read a 6 bit encoding type. */
         if (isencoded) *isencoded = 1;
@@ -236,7 +236,7 @@ uint64_t rdbLoadLen(rio *rdb, int *isencoded) {
 //    if (rdbLoadLenByRef(rdb,isencoded,&len) == -1) return RDB_LENERR;
     len = myRdbLoadLen(rdb,isencoded);
     if (len == UINT64_MAX) {
-        serverLog(LL_WARNING, "myrdbloadlen len: %lu", len);
+//        serverLog(LL_WARNING, "myrdbloadlen len: %lu", len);
         return RDB_LENERR;
     }
 //    serverLog(LL_WARNING, "myrdbloadlen len2 : %lu", len);
@@ -674,6 +674,7 @@ robj *myRdbGenericLoadStringObject(rio *rdb, int flags) {
 }
 
 robj *myRdbGenericLoadStringObject2(rio *rdb, int flags, char* redis_key) {
+    UNUSED(redis_key);
     int encode = flags & RDB_LOAD_ENC;
     int plain = flags & RDB_LOAD_PLAIN;
     int sds = flags & RDB_LOAD_SDS;
@@ -2221,7 +2222,7 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         if ((o = myRdbLoadEncodedStringObject(rdb, redis_key)) == NULL) return NULL;
 
 //        o = tryObjectEncoding(o);
-        o = myTryObjectEncoding(o, root, redis_key);
+        o = myTryObjectEncoding(o, root);
     } else if (rdbtype == RDB_TYPE_LIST) {
         /* Read list value */
         if ((len = rdbLoadLen(rdb,NULL)) == RDB_LENERR) return NULL;
@@ -2254,6 +2255,9 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
             o = createIntsetObject();
         }
 
+        cJSON *items = 0;
+        items = cJSON_CreateArray();
+
         /* Load every single element of the set */
         for (i = 0; i < len; i++) {
             long long llval;
@@ -2272,6 +2276,16 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                 }
             }
 
+            cJSON *item = 0;
+            item = cJSON_CreateObject();
+
+            if (item) {
+                if (items) {
+                    cJSON_AddItemToObject(item, "m", cJSON_CreateString((char*)sdsele));
+                    cJSON_AddItemToArray(items, item);
+                }
+            }
+
             /* This will also be called when the set was just converted
              * to a regular hash table encoded set. */
             if (o->encoding == OBJ_ENCODING_HT) {
@@ -2280,6 +2294,7 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                 sdsfree(sdsele);
             }
         }
+        cJSON_AddItemToObject(root, redis_key, items);
     } else if (rdbtype == RDB_TYPE_ZSET_2 || rdbtype == RDB_TYPE_ZSET) {
         /* Read list/set value. */
         uint64_t zsetlen;
@@ -2500,8 +2515,9 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
             case RDB_TYPE_SET_INTSET:
                 o->type = OBJ_SET;
                 o->encoding = OBJ_ENCODING_INTSET;
-                if (intsetLen(o->ptr) > server.set_max_intset_entries)
-                    setTypeConvert(o,OBJ_ENCODING_HT);
+//                if (intsetLen(o->ptr) > server.set_max_intset_entries)
+                if (intsetLen(o->ptr) > 0)
+                    mySetTypeConvert(o, OBJ_ENCODING_HT, root);
                 break;
             case RDB_TYPE_ZSET_ZIPLIST:
                 o->type = OBJ_ZSET;
@@ -2519,7 +2535,8 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                         long long vlong;
 
                         zset *zs;
-                        zskiplistNode *node, *next;
+//                        zskiplistNode *node, *next;
+                        zskiplistNode *node;
                         double score;
 
                         zs = zmalloc(sizeof(*zs));
@@ -2614,9 +2631,9 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
     return o;
 }
 
-char* getIdKey (char* idbuf, int compKeyLen, int idlen, char* rawKey) {
-    strncpy(idbuf, rawKey + compKeyLen + 1, idlen);
-}
+//char* getIdKey (char* idbuf, int compKeyLen, int idlen, char* rawKey) {
+//    strncpy(idbuf, rawKey + compKeyLen + 1, idlen);
+//}
 
 void getTypeKey (char* stbuf, int compKeyLen, char* rawKey) {
     strncpy(stbuf, rawKey, compKeyLen);
