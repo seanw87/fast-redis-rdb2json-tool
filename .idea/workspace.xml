@@ -13,42 +13,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f027095-dc38-4b99-8fdd-b4471c917ece" name="Default" comment="virgin commit">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/DependInfo.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/build.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/cmake_clean.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/depend.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/flags.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/qiuqiu_dmp_rdb2json.dir/progress.make" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/qiuqiu_dmp_rdb2json.cbp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/rdb2json.cbp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deps/lua/src/lua" afterPath="$PROJECT_DIR$/deps/lua/src/lua" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deps/lua/src/luac" afterPath="$PROJECT_DIR$/deps/lua/src/luac" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb2json" afterPath="$PROJECT_DIR$/src/rdb2json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Makefile.dep" afterPath="$PROJECT_DIR$/src/Makefile.dep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.c" afterPath="$PROJECT_DIR$/src/db.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dict.c" afterPath="$PROJECT_DIR$/src/dict.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/object.c" afterPath="$PROJECT_DIR$/src/object.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.c" afterPath="$PROJECT_DIR$/src/rdb.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/server.h" afterPath="$PROJECT_DIR$/src/server.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_set.c" afterPath="$PROJECT_DIR$/src/t_set.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/t_zset.c" afterPath="$PROJECT_DIR$/src/t_zset.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rdb.h" afterPath="$PROJECT_DIR$/src/rdb.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,179 +30,40 @@
     <favorites_list name="qiuqiu-dmp-rdb2json" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="rdb.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rdb.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="2288" column="50" lean-forward="true" selection-start-line="2288" selection-start-column="50" selection-end-line="2288" selection-end-column="50" />
-              <folding>
-                <element signature="e#16286#16916#0" expanded="false" />
-                <element signature="e#16918#17390#0" expanded="false" />
-                <element signature="e#19362#20744#0" expanded="false" />
-                <element signature="e#23873#25463#0" expanded="false" />
-                <element signature="e#25465#25961#0" expanded="false" />
-                <element signature="e#25963#26372#0" expanded="false" />
-                <element signature="e#26374#26652#0" expanded="false" />
-                <element signature="e#26654#26836#0" expanded="false" />
-                <element signature="e#26838#27043#0" expanded="false" />
-                <element signature="e#27045#28464#0" expanded="false" />
-                <element signature="e#28466#28752#0" expanded="false" />
-                <element signature="e#28754#34269#0" expanded="false" />
-                <element signature="e#34271#34649#0" expanded="false" />
-                <element signature="e#34651#35484#0" expanded="false" />
-                <element signature="e#35486#35786#0" expanded="false" />
-                <element signature="e#35788#36009#0" expanded="false" />
-                <element signature="e#36011#36280#0" expanded="false" />
-                <element signature="e#36282#37443#0" expanded="false" />
-                <element signature="e#40902#41939#0" expanded="false" />
-                <element signature="e#41941#43732#0" expanded="false" />
-                <element signature="e#43734#45568#0" expanded="false" />
-                <element signature="e#45570#45726#0" expanded="false" />
-                <element signature="e#45728#56855#0" expanded="false" />
-                <element signature="e#56857#57292#0" expanded="false" />
-                <element signature="e#57294#57522#0" expanded="false" />
-                <element signature="e#57524#57597#0" expanded="false" />
-                <element signature="e#57599#58530#0" expanded="false" />
-                <element signature="e#65522#66215#0" expanded="false" />
-                <element signature="e#66217#67785#0" expanded="false" />
-                <element signature="e#67787#71494#0" expanded="false" />
-                <element signature="e#71496#71966#0" expanded="false" />
-                <element signature="e#71968#78293#0" expanded="false" />
-                <element signature="e#78295#78585#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t_zset.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/t_zset.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="1158" column="0" lean-forward="false" selection-start-line="1158" selection-start-column="0" selection-end-line="1158" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/server.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="333" column="28" lean-forward="false" selection-start-line="333" selection-start-column="8" selection-end-line="333" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="t_set.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/t_set.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="250" column="46" lean-forward="false" selection-start-line="250" selection-start-column="46" selection-end-line="250" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dict.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dict.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-              <folding>
-                <element signature="e#2186#2205#0" expanded="true" />
-                <element signature="e#2252#2281#0" expanded="true" />
-                <element signature="e#2308#2341#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sds.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sds.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="246" column="4" lean-forward="false" selection-start-line="246" selection-start-column="4" selection-end-line="246" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cJSON.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cJSON.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="241" column="8" lean-forward="false" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="object.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/object.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="486" column="65" lean-forward="false" selection-start-line="486" selection-start-column="65" selection-end-line="486" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rdb.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rdb.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cJSON</find>
-      <find>items</find>
-      <find>RDB_TYPE_SET</find>
-      <find>cjson</find>
-      <find>createHashObject</find>
-      <find>hash_max_ziplist_value</find>
-      <find>LLONG_MAX</find>
-      <find>1346</find>
-      <find>hashTypeConvert</find>
-      <find>dbAdd</find>
-      <find>myRdbLoadIntegerObject</find>
-      <find>myHashTypeConvert</find>
-      <find>setTypeConvert</find>
-      <find>re</find>
-      <find>redis-</find>
-      <find>redis_</find>
-      <find>redis_k</find>
-      <find>redis_ke</find>
-      <find>r</find>
-      <find>mySetTypeConvertmyTryObjectEncoding</find>
-      <find>root</find>
-      <find>myTryObjectEncoding</find>
-      <find>RDB_TYPE_SET_INTSET</find>
-      <find>mySetTypeConvert</find>
-      <find>JSON_CreateString</find>
       <find>, cJSON *root</find>
       <find>getIdKey</find>
       <find>redis_key</find>
       <find>serverLog</find>
       <find>UNUSED</find>
+      <find>Can't handle RDB format version</find>
+      <find>andle RDB format version</find>
+      <find>ndle RDB format version</find>
+      <find>dle RDB format version</find>
+      <find>le RDB format version</find>
+      <find>e RDB format version</find>
+      <find>RDB format version</find>
+      <find>RDB format version</find>
+      <find>DB format version</find>
+      <find>B format version</find>
+      <find>format version</find>
+      <find>format version</find>
+      <find>ormat version</find>
+      <find>rmat version</find>
+      <find>mat version</find>
+      <find>at version</find>
+      <find>t version</find>
+      <find>version</find>
+      <find>version</find>
+      <find>form</find>
+      <find>format=</find>
+      <find>format</find>
+      <find>R</find>
+      <find>RDB</find>
+      <find>handle RDB format version</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -246,8 +74,8 @@
       <replace>matchlist</replace>
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/src</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -267,7 +95,6 @@
         <option value="$PROJECT_DIR$/src/t_hash.c" />
         <option value="$PROJECT_DIR$/src/util.c" />
         <option value="$PROJECT_DIR$/src/util.h" />
-        <option value="$PROJECT_DIR$/src/rdb.h" />
         <option value="$PROJECT_DIR$/src/cJSON.c" />
         <option value="$PROJECT_DIR$/src/object.c" />
         <option value="$PROJECT_DIR$/src/server.h" />
@@ -276,6 +103,7 @@
         <option value="$PROJECT_DIR$/src/t_zset.c" />
         <option value="$PROJECT_DIR$/src/dict.c" />
         <option value="$PROJECT_DIR$/src/rdb.c" />
+        <option value="$PROJECT_DIR$/src/rdb.h" />
       </list>
     </option>
   </component>
@@ -655,11 +483,12 @@
       <workItem from="1545718876745" duration="25422000" />
       <workItem from="1546095321436" duration="694000" />
       <workItem from="1550557893008" duration="14098000" />
+      <workItem from="1554974890559" duration="713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285577000" />
+    <option name="totallyTimeSpent" value="286290000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,17 +502,17 @@
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="976" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18684356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18905473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1262136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12652068" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277635" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928312" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18358208" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32388058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -919,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="141" column="8" lean-forward="false" selection-start-line="141" selection-start-column="8" selection-end-line="141" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="121" column="24" lean-forward="false" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="1063" column="48" lean-forward="false" selection-start-line="1063" selection-start-column="48" selection-end-line="1063" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,21 +832,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
           <caret line="521" column="34" lean-forward="false" selection-start-line="521" selection-start-column="34" selection-end-line="521" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rdb.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="85" column="27" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sds.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="4182">
           <caret line="246" column="4" lean-forward="false" selection-start-line="246" selection-start-column="4" selection-end-line="246" selection-end-column="4" />
           <folding />
         </state>
@@ -1029,7 +845,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/object.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="8262">
           <caret line="486" column="65" lean-forward="false" selection-start-line="486" selection-start-column="65" selection-end-line="486" selection-end-column="65" />
           <folding />
         </state>
@@ -1037,7 +853,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cJSON.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
+        <state relative-caret-position="4097">
           <caret line="241" column="8" lean-forward="false" selection-start-line="241" selection-start-column="8" selection-end-line="241" selection-end-column="8" />
           <folding />
         </state>
@@ -1045,7 +861,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/server.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="5661">
           <caret line="333" column="28" lean-forward="false" selection-start-line="333" selection-start-column="8" selection-end-line="333" selection-end-column="28" />
           <folding />
         </state>
@@ -1053,8 +869,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dict.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        <state relative-caret-position="816">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
           <folding>
             <element signature="e#2186#2205#0" expanded="true" />
             <element signature="e#2252#2281#0" expanded="true" />
@@ -1065,7 +881,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/t_set.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
+        <state relative-caret-position="4250">
           <caret line="250" column="46" lean-forward="false" selection-start-line="250" selection-start-column="46" selection-end-line="250" selection-end-column="46" />
           <folding />
         </state>
@@ -1073,7 +889,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/db.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="2737">
           <caret line="161" column="16" lean-forward="false" selection-start-line="161" selection-start-column="16" selection-end-line="161" selection-end-column="16" />
           <folding />
         </state>
@@ -1081,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/t_zset.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="19686">
           <caret line="1158" column="0" lean-forward="false" selection-start-line="1158" selection-start-column="0" selection-end-line="1158" selection-end-column="0" />
           <folding />
         </state>
@@ -1089,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rdb.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="2288" column="50" lean-forward="true" selection-start-line="2288" selection-start-column="50" selection-end-line="2288" selection-end-column="50" />
+        <state relative-caret-position="365">
+          <caret line="1682" column="38" lean-forward="false" selection-start-line="1682" selection-start-column="38" selection-end-line="1682" selection-end-column="38" />
           <folding>
             <element signature="e#16286#16916#0" expanded="false" />
             <element signature="e#16918#17390#0" expanded="false" />
@@ -1126,6 +942,14 @@
             <element signature="e#71968#78293#0" expanded="false" />
             <element signature="e#78295#78585#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rdb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
