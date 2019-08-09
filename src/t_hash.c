@@ -526,11 +526,15 @@ void myHashTypeConvertZiplist(robj *o, int enc, cJSON *root) {
                                  o->ptr,ziplistBlobLen(o->ptr));
                 serverPanic("Ziplist corruption detected");
             }
+
+            sdsfree(key);
+            sdsfree(value);
         }
         hashTypeReleaseIterator(hi);
         zfree(o->ptr);
         o->encoding = OBJ_ENCODING_HT;
         o->ptr = dict;
+
     } else {
         serverPanic("Unknown hash encoding");
     }

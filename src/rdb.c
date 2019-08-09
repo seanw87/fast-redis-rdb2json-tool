@@ -2210,12 +2210,16 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
         char keyNo[keyNoLen+1];
         snprintf(keyNo, sizeof(keyNo), "%d", keyNoInt);
 
-        cJSON_AddStringToObject(root, concat("k1e2y", keyNo), t);
+        char *concat_k1e2yx = concat("k1e2y", keyNo);
+        cJSON_AddStringToObject(root, concat_k1e2yx, t);
         keyNoInt++;
         t = strtok(NULL, d);
+
+        free(concat_k1e2yx);
     }
 
 //    serverLog(LL_NOTICE, "myRdbLoadObjectCommon rdbtype: %d, redis_key: %s", rdbtype, redis_key);
+
 
     if (rdbtype == RDB_TYPE_STRING) {
         /* Read string value */
@@ -2341,7 +2345,8 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                 if (item) {
                     if (items) {
                         cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)sdsele));
-                        cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
+//                        cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(znode->score));
+                        cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(score));
                         cJSON_AddItemToArray(items, item);
                     }
                 }
@@ -2528,6 +2533,7 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                     itemsStr = myZsetConvert(o,OBJ_ENCODING_SKIPLIST);
                 } else {
                     if (o->encoding == OBJ_ENCODING_ZIPLIST) {
+//                        serverLog(LL_NOTICE, "rediskey: %s, type: %d,  encoding: %d", redis_key, rdbtype, o->encoding);
                         unsigned char *zl = o->ptr;
                         unsigned char *eptr, *sptr;
                         unsigned char *vstr;
@@ -2536,22 +2542,25 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
 
                         zset *zs;
 //                        zskiplistNode *node, *next;
-                        zskiplistNode *node;
+//                        zskiplistNode *node;
                         double score;
 
                         zs = zmalloc(sizeof(*zs));
                         zs->dict = dictCreate(&zsetDictType,NULL);
-                        zs->zsl = zslCreate();
+//                        zs->zsl = zslCreate();
 
                         eptr = ziplistIndex(zl,0);
                         serverAssertWithInfo(NULL,o,eptr != NULL);
                         sptr = ziplistNext(zl,eptr);
                         serverAssertWithInfo(NULL,o,sptr != NULL);
+                        cJSON *items;
+                        cJSON *item;
 
-                        cJSON *items, *item;
                         items = cJSON_CreateArray();
 
                         while (eptr != NULL) {
+                            item = cJSON_CreateObject();
+
                             score = zzlGetScore(sptr);
                             serverAssertWithInfo(NULL,o,ziplistGet(eptr,&vstr,&vlen,&vlong));
                             if (vstr == NULL)
@@ -2559,26 +2568,39 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
                             else
                                 ele = sdsnewlen((char*)vstr,vlen);
 
-                            node = zslInsert(zs->zsl,score,ele);
-                            serverAssert(dictAdd(zs->dict,ele,&node->score) == DICT_OK);
+//                            node = zslInsert(zs->zsl,score,ele);
+//                            serverAssert(dictAdd(zs->dict,ele,&node->score) == DICT_OK);
 
-
-                            cJSON_AddItemToArray(items, item = cJSON_CreateObject());
-                            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)node->ele));
-                            cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(node->score));
-
+                            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)ele));
+                            cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(score));
+                            cJSON_AddItemToArray(items, item);
+//                            cJSON_AddItemToObject(item, "obj", cJSON_CreateString((char*)node->ele));
+//                            cJSON_AddItemToObject(item, "t", cJSON_CreateNumber(node->score));
 
 //                            serverLog(LL_NOTICE, "zsetLength(o) <= server.zset_max_ziplist_entries, o->ptr: %s, "
 //                                              "sdslen: %d, robj.type: %d, robj.encoding: %d, ele: %s, score: %f",
 //                                      (char*)o->ptr, len, o->type, o->encoding, (char*)node->ele, node->score);
 
                             zzlNext(zl,&eptr,&sptr);
+
+//                            sdsfree(node->ele);
+
+                            sdsfree(ele);
+                            free(vstr);
                         }
 
                         itemsStr = cJSON_PrintUnformatted(items);
+
+                        zfree(zs->dict);
+//                        zfree(zs->zsl);
+                        zfree(zs);
+                        cJSON_Delete(items);
                     }
                 }
                 cJSON_AddStringToObject(root, redis_key, itemsStr);
+
+
+                free(itemsStr);
 
                 break;
             case RDB_TYPE_HASH_ZIPLIST:
@@ -2623,6 +2645,7 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
     char *s = cJSON_PrintUnformatted(root);
     fputs(s, dest);
     fputs("\r\n", dest);
+//    serverLog(LL_NOTICE, "starting to delete root nodes");
     cJSON_Delete(root);
     free(s);
 
@@ -2773,7 +2796,7 @@ int myRdbLoadRio(rio *rdb, FILE *dest, rdbSaveInfo *rsi) {
         }
 
         /* Add the new object in the hash table */
-        dbAdd(db,key,val);
+//        dbAdd(db,key,val);
 
         decrRefCount(key);
         decrRefCount(val);

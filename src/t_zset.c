@@ -1225,6 +1225,10 @@ char* myZsetConvert(robj *zobj, int encoding) {
         zfree(zobj->ptr);
         zobj->ptr = zs;
         zobj->encoding = OBJ_ENCODING_SKIPLIST;
+
+//        sdsfree(ele);
+//        zfree(zs->dict);
+//        zfree(zs);
     } else if (zobj->encoding == OBJ_ENCODING_SKIPLIST) {
         unsigned char *zl = ziplistNew();
 
