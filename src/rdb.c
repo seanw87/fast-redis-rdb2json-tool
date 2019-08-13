@@ -2586,7 +2586,8 @@ robj *myRdbLoadObjectCommon(int rdbtype, rio *rdb, char *redis_key, FILE *dest) 
 //                            sdsfree(node->ele);
 
                             sdsfree(ele);
-                            free(vstr);
+//                            if (vstr != NULL)
+//                                free(vstr);
                         }
 
                         itemsStr = cJSON_PrintUnformatted(items);
